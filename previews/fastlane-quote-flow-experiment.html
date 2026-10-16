@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Fast Lane — Working Quote Flow Demonstration</title>
+<style>
+:root{font:16px/1.5 system-ui,Segoe UI,Arial,sans-serif;color:#eaf3ff;background:#091421}
+*{box-sizing:border-box}body{margin:0}header,main,footer{max-width:1100px;margin:auto;padding:24px}
+header{display:flex;justify-content:space-between;gap:20px;align-items:center}
+.brand{font-weight:800;letter-spacing:.05em}.tag{background:#223451;padding:7px 11px;border-radius:8px;font-size:12px;color:#cee0f9}
+h1{font-size:clamp(29px,4.5vw,49px);line-height:1.12;letter-spacing:-.035em;max-width:800px;margin:24px 0 14px}
+p{color:#b6c9e4}.mark{color:#73d5f1}section{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:28px}
+article{background:#122238;border:1px solid #365071;border-radius:16px;padding:22px}
+h2{margin:0 0 8px;font-size:22px}.step{font-weight:750;font-size:13px;text-transform:uppercase;letter-spacing:.08em}
+.mock{border-radius:12px;background:#0d1a2c;padding:20px;border:1px solid #2e4361;margin-top:19px}
+label{display:block;font-weight:600;font-size:14px;margin:9px 0 5px}input,select,button{width:100%;font:inherit;border-radius:8px;padding:12px}
+input,select{background:#14273d;color:white;border:1px solid #38577a}
+button{background:#4c83aa;color:white;border:0;margin-top:14px;cursor:pointer;font-weight:700}
+button:hover,button:focus-visible{outline:2px solid #e5f6ff}
+small{color:#b4c5dc}.muted{opacity:.7}.good{color:#80f7c1}.bad{color:#ffb4ad}.status{margin-top:16px;min-height:55px}
+#beforeResult,#afterResult{display:none;padding:12px;border-radius:9px;background:#1e324a}
+@media(max-width:760px){section{grid-template-columns:1fr}header,main,footer{padding:18px}}
+</style></head><body>
+<header><div class="brand">FAST LANE CENTRAL <span class="mark">/ Demo Lab</span></div><div class="tag">SIMULATED WORKFLOW · NO CUSTOMER DATA SENT</div></header>
+<main><h1>Does your website <span class="mark">turn interest into enquiries?</span></h1>
+<p>Side-by-side proof of how a clear quote request and visible confirmation improve the customer experience. This is a fictional service-business example—not a client testimonial or a live lead-capture installation.</p>
+<section>
+<article>
+<div class="step bad">Before: Friction</div><h2>The unclear contact path</h2>
+<p>Imagine a customer reaching the end of a page and not knowing what to do next.</p>
+<div class="mock"><strong>Demo Heating Company</strong><p>We provide service. Get in touch for more information.</p>
+<div class="muted" style="padding:16px;border:1px dashed #54708c;border-radius:8px">No visible quote form or defined next step.</div>
+<button type="button" id="beforeButton">What happens if I need a quote?</button>
+<div class="status"><div id="beforeResult" class="bad" role="status">In this fictional before-state, there is no actionable enquiry flow. The customer must find another contact method.</div></div>
+</div>
+</article>
+<article>
+<div class="step good">After: Clear next step</div><h2>A working frontend demonstration</h2><p>The customer selects a service, enters a test name, and gets a clear confirmation.</p>
+<div class="mock"><strong>Demo Heating Company</strong>
+<form id="quoteForm">
+<label for="demoName">Test name</label>
+<input id="demoName" maxlength="60" placeholder="Example Customer" autocomplete="off" required>
+<label for="demoService">Service needed</label>
+<select id="demoService" required><option value="">Select service</option><option>Heating inspection</option><option>Cooling inspection</option><option>Repair estimate</option></select>
+<button type="submit">Preview request confirmation</button></form>
+<div class="status"><div id="afterResult" class="good" role="status" aria-live="polite"></div></div>
+</div>
+</article></section>
+<p><strong>For a real project:</strong> The frontend would be connected to the customer's approved inbox or CRM, validated server-side, protected from spam, tested end-to-end, and only then deployed. This static demonstration does not collect leads or send mail.</p>
+</main><footer><small>Fast Lane Central · Web development · Custom apps · Automotive diagnostics · <a style="color:#79dffb" href="https://fastlanecentral.com/">fastlanecentral.com</a></small></footer>
+<script>
+"use strict";
+document.getElementById("beforeButton").addEventListener("click",()=>{
+  document.getElementById("beforeResult").style.display="block";
+});
+document.getElementById("quoteForm").addEventListener("submit",(event)=>{
+ event.preventDefault();
+ const name=document.getElementById("demoName").value.trim();
+ const service=document.getElementById("demoService").value;
+ if(!name || !service)return;
+ const result=document.getElementById("afterResult");
+ result.textContent="Demo only: "+name+", your "+service.toLowerCase()+" request reached the confirmation step. Nothing was sent or stored.";
+ result.style.display="block";
+});
+</script></body></html>
