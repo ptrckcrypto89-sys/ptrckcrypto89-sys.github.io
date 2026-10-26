@@ -1,0 +1,73 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="color-scheme" content="light"><title>Terms of Service | Fast Lane Central</title><meta name="description" content="Purchase and service terms for Fast Lane Central digital downloads and custom projects."><link rel="canonical" href="https://fastlanecentral.com/terms.html"><style>
+:root{color-scheme:light}*{box-sizing:border-box}body{background:#f7faf8;color:#1d342d;margin:0;font-family:system-ui,-apple-system,Segoe UI,Arial,sans-serif;font-size:16px;line-height:1.7}header{background:#112b24;color:#fff;padding:25px max(24px,calc((100vw - 940px)/2))}header a{color:#fff}main{max-width:940px;margin:auto;padding:28px 25px 80px}h1{font-size:clamp(32px,6vw,48px);line-height:1.2}h2{margin-top:35px;font-size:23px;line-height:1.3}a{color:#185940;text-underline-offset:3px}a:focus-visible{outline:3px solid #ef704b;outline-offset:4px}.notice{background:#eaf2eb;border-left:5px solid #245d45;padding:18px 22px;margin:25px 0}.notice strong{color:#122f24}.links{display:flex;gap:14px;flex-wrap:wrap}footer{margin-top:55px;border-top:1px solid #d0ddd5;padding-top:25px}footer nav{display:flex;flex-wrap:wrap;gap:12px 18px}small{color:#3f5b4c}.skip{position:absolute;left:-10000px;top:0}.skip:focus{left:20px;top:10px;z-index:10;background:white;padding:10px}@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}}
+</style>
+<!-- Fast Lane Central: optional Google Analytics 4; loads only on visitor consent. -->
+<script>
+(function() {
+  'use strict';
+  var KEY = 'fastlane_ga_consent_v1';
+  var ID = 'G-1Q6HTWK42K';
+  function stored() { try { return localStorage.getItem(KEY); } catch (e) { return null; } }
+  function persist(value) { try { localStorage.setItem(KEY, value); } catch (e) {} }
+  function loadAnalytics() {
+    if (window.__fastlaneGA4Loaded) return;
+    window.__fastlaneGA4Loaded = true;
+    window.dataLayer = window.dataLayer || [];
+    window.gtag = function() { window.dataLayer.push(arguments); };
+    window.gtag('js', new Date());
+    window.gtag('config', ID, { send_page_view: true, allow_google_signals: false, allow_ad_personalization_signals: false });
+    var script = document.createElement('script');
+    script.async = true;
+    script.src = 'https://www.googletagmanager.com/gtag/js?id=' + encodeURIComponent(ID);
+    document.head.appendChild(script);
+    document.addEventListener('submit', function(ev) {
+      var form = ev.target;
+      if (form && form.tagName === 'FORM' && /^https:\/\/(?:www\.)?payhip\.com\/b\//i.test(form.action)) {
+        window.gtag('event', 'begin_checkout', { checkout_provider: 'Payhip', transport_type: 'beacon' });
+      }
+    }, true);
+  }
+  function promptChoice() {
+    if (document.getElementById('fastlane-analytics-choice')) return;
+    var el = document.createElement('section');
+    el.id = 'fastlane-analytics-choice';
+    el.setAttribute('role', 'region');
+    el.setAttribute('aria-label', 'Optional visitor analytics');
+    el.style.cssText = 'position:fixed;bottom:14px;left:14px;right:14px;max-width:460px;z-index:2147483645;background:#112322;color:#fffefa;border:1px solid #497464;border-radius:12px;padding:18px;box-shadow:0 12px 38px #0005;font:14px/1.5 system-ui,sans-serif';
+    el.innerHTML = '<strong style="font-size:16px">Website analytics</strong><p style="margin:9px 0 15px">Allow optional Google Analytics to measure visits and improve our website? No advertising cookies are required.</p><div style="display:flex;gap:9px;flex-wrap:wrap"><button type="button" id="fl-ga-allow" style="border:0;background:#ef704b;color:#112322;border-radius:7px;padding:9px 13px;font:700 13px system-ui;cursor:pointer">Allow analytics</button><button type="button" id="fl-ga-decline" style="background:transparent;color:#fffefa;border:1px solid #c1d2cb;border-radius:7px;padding:9px 13px;font:700 13px system-ui;cursor:pointer">Decline</button><a href="/fastlane/cookie-policy.html" style="color:#c6eee1;align-self:center">Cookie policy</a></div>';
+    document.body.appendChild(el);
+    document.getElementById('fl-ga-allow').addEventListener('click', function() {
+      persist('accepted'); el.remove(); loadAnalytics();
+    });
+    document.getElementById('fl-ga-decline').addEventListener('click', function() {
+      persist('declined'); el.remove(); if (window.__fastlaneGA4Loaded) location.reload();
+    });
+  }
+  function setup() {
+    var pref = document.getElementById('fastlane-analytics-settings');
+    if (pref) pref.addEventListener('click', promptChoice);
+    var choice = stored();
+    if (choice === 'accepted') loadAnalytics();
+    else if (choice !== 'declined') promptChoice();
+  }
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', setup);
+  else setup();
+})();
+</script>
+
+<meta name="robots" content="noindex,nofollow">
+</head><body><a class="skip" href="#content">Skip to main content</a><header><a href="/fastlane/">← Fast Lane Central</a></header><main id="content">
+<h1>Terms of Service</h1><p><strong>Effective October 26, 2026.</strong> Published by Fast Lane Ventures LLC, operating Fast Lane Central. Contact: <a href="mailto:contact@fastlanecentral.com">contact@fastlanecentral.com</a>.</p>
+<div class="notice"><strong>Final sale notice:</strong> Digital product purchases are generally final after successful payment and delivery. Read the complete <a href="/fastlane/refund-policy.html">Final Sale & Refund Policy</a> before purchasing. Mandatory legal rights remain unaffected.</div>
+<h2>1. Who we are and applicability</h2><p>Fast Lane Ventures LLC operates Fast Lane Central (collectively, “we,” “us,” or “our”). These terms apply to use of fastlanecentral.com and digital goods sold or linked under this brand. An individual product listing, a checkout provider's terms, and a separately signed service agreement may add relevant conditions; where an individually signed custom-services agreement conflicts, that agreement controls the project to the extent allowed by law.</p>
+<h2>2. Eligibility and acceptance</h2><p>Purchasers must be at least 18 years old or have a legally authorized adult complete the transaction. On a supported checkout, you affirmatively agree to these terms and the refund policy before payment. You should review product descriptions, compatibility requirements, included files and delivery terms before purchase.</p>
+<h2>3. Products, payment and electronic delivery</h2><p>Orders are accepted only after the checkout provider confirms successful payment. Prices and applicable taxes are disclosed in the checkout interface. Download links or product access are normally delivered using the platform's confirmation page or electronic receipt. Keep your order reference and safely back up downloaded files. We do not request bank passwords or publish private transfer instructions on our website.</p>
+<h2>4. Digital product license</h2><p>Unless a specific listing or written license clearly states otherwise, buyers receive a nonexclusive, nontransferable license to use the purchased material for their own lawful purposes. You may not resell, redistribute, sublicense, publish download files, claim authorship or provide unauthorized public access. Any commercial-use permissions stated in an individual product license remain valid. The purchased product and version are those described at the time of purchase; later product editions are not automatically included unless promised in writing.</p>
+<h2>5. Technical requirements and limitations</h2><p>Local-first products may store information in the browser and may not include cloud synchronization, automatic backups, payment integrations or managed hosting. Always review the product's actual feature list, prerequisites and limitations. Customers are responsible for their own lawful data entry and backups. No revenue, lead volume, search ranking, legal outcome or uninterrupted availability is guaranteed.</p>
+<h2>6. Final sales, exceptions and corrections</h2><p>Digital purchases are subject to our <a href="/fastlane/refund-policy.html">Final Sale & Refund Policy</a>. No discretionary refund is offered for change of mind or non-use after correct delivery. Any statutory rights, mandatory remedies for defective or undelivered goods and applicable payment-provider dispute rules are preserved.</p>
+<h2>7. Custom websites, apps, automation and professional services</h2><p>Estimates, mockups and previews are not binding commitments to deliver a finished product. A signed statement of work controls scope, schedule, review milestones, change requests, deposit use, final acceptance, permitted use and cancellation of custom services. Client acceptance and payment requirements must be clearly specified in that signed agreement; a website footer or generic checkout checkbox does not override it.</p>
+<h2>8. Intellectual property and third-party services</h2><p>Preexisting design assets, source code, trademarks, examples and other materials remain the property of their respective owners absent a separate written transfer or license. Third-party platforms, forms, hosting, payment processors and external links have their own terms. Do not submit confidential credentials or material you lack authority to disclose.</p>
+<h2>9. Warranties and liability</h2><p>Except for express promises in a product listing or signed agreement and rights protected by law, informational material is supplied without promises of a particular outcome. Any limitation of liability or exclusion of implied warranties applies only to the extent enforceable under applicable law; this clause does not exclude liability that cannot lawfully be excluded.</p>
+<h2>10. Contact and changes</h2><p>Contact <a href="mailto:contact@fastlanecentral.com">contact@fastlanecentral.com</a> regarding an order, service agreement, correction or legal notice. We may update these general terms prospectively; the version accepted for a completed sale and any signed service contract are not retroactively rewritten merely by posting new website terms.</p>
+
+<footer><nav aria-label="Legal information"><a href="/fastlane/terms.html">Terms of Service</a><a href="/fastlane/refund-policy.html">Final Sale / Refund Policy</a><a href="/fastlane/privacy.html">Privacy Policy</a><a href="/fastlane/cookie-policy.html">Cookies</a><a href="/fastlane/accessibility.html">Accessibility</a></nav><p><small>© 2026 Fast Lane Ventures LLC · <a href="/fastlane/">Return home</a></small></p></footer></main></body></html>

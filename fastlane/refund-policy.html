@@ -1,0 +1,69 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="color-scheme" content="light"><title>Final Sale &amp; Refund Policy | Fast Lane Central</title><meta name="description" content="How final digital sales and cancellation requests are handled by Fast Lane Central."><link rel="canonical" href="https://fastlanecentral.com/refund-policy.html"><style>
+:root{color-scheme:light}*{box-sizing:border-box}body{background:#f7faf8;color:#1d342d;margin:0;font-family:system-ui,-apple-system,Segoe UI,Arial,sans-serif;font-size:16px;line-height:1.7}header{background:#112b24;color:#fff;padding:25px max(24px,calc((100vw - 940px)/2))}header a{color:#fff}main{max-width:940px;margin:auto;padding:28px 25px 80px}h1{font-size:clamp(32px,6vw,48px);line-height:1.2}h2{margin-top:35px;font-size:23px;line-height:1.3}a{color:#185940;text-underline-offset:3px}a:focus-visible{outline:3px solid #ef704b;outline-offset:4px}.notice{background:#eaf2eb;border-left:5px solid #245d45;padding:18px 22px;margin:25px 0}.notice strong{color:#122f24}.links{display:flex;gap:14px;flex-wrap:wrap}footer{margin-top:55px;border-top:1px solid #d0ddd5;padding-top:25px}footer nav{display:flex;flex-wrap:wrap;gap:12px 18px}small{color:#3f5b4c}.skip{position:absolute;left:-10000px;top:0}.skip:focus{left:20px;top:10px;z-index:10;background:white;padding:10px}@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}}
+</style>
+<!-- Fast Lane Central: optional Google Analytics 4; loads only on visitor consent. -->
+<script>
+(function() {
+  'use strict';
+  var KEY = 'fastlane_ga_consent_v1';
+  var ID = 'G-1Q6HTWK42K';
+  function stored() { try { return localStorage.getItem(KEY); } catch (e) { return null; } }
+  function persist(value) { try { localStorage.setItem(KEY, value); } catch (e) {} }
+  function loadAnalytics() {
+    if (window.__fastlaneGA4Loaded) return;
+    window.__fastlaneGA4Loaded = true;
+    window.dataLayer = window.dataLayer || [];
+    window.gtag = function() { window.dataLayer.push(arguments); };
+    window.gtag('js', new Date());
+    window.gtag('config', ID, { send_page_view: true, allow_google_signals: false, allow_ad_personalization_signals: false });
+    var script = document.createElement('script');
+    script.async = true;
+    script.src = 'https://www.googletagmanager.com/gtag/js?id=' + encodeURIComponent(ID);
+    document.head.appendChild(script);
+    document.addEventListener('submit', function(ev) {
+      var form = ev.target;
+      if (form && form.tagName === 'FORM' && /^https:\/\/(?:www\.)?payhip\.com\/b\//i.test(form.action)) {
+        window.gtag('event', 'begin_checkout', { checkout_provider: 'Payhip', transport_type: 'beacon' });
+      }
+    }, true);
+  }
+  function promptChoice() {
+    if (document.getElementById('fastlane-analytics-choice')) return;
+    var el = document.createElement('section');
+    el.id = 'fastlane-analytics-choice';
+    el.setAttribute('role', 'region');
+    el.setAttribute('aria-label', 'Optional visitor analytics');
+    el.style.cssText = 'position:fixed;bottom:14px;left:14px;right:14px;max-width:460px;z-index:2147483645;background:#112322;color:#fffefa;border:1px solid #497464;border-radius:12px;padding:18px;box-shadow:0 12px 38px #0005;font:14px/1.5 system-ui,sans-serif';
+    el.innerHTML = '<strong style="font-size:16px">Website analytics</strong><p style="margin:9px 0 15px">Allow optional Google Analytics to measure visits and improve our website? No advertising cookies are required.</p><div style="display:flex;gap:9px;flex-wrap:wrap"><button type="button" id="fl-ga-allow" style="border:0;background:#ef704b;color:#112322;border-radius:7px;padding:9px 13px;font:700 13px system-ui;cursor:pointer">Allow analytics</button><button type="button" id="fl-ga-decline" style="background:transparent;color:#fffefa;border:1px solid #c1d2cb;border-radius:7px;padding:9px 13px;font:700 13px system-ui;cursor:pointer">Decline</button><a href="/fastlane/cookie-policy.html" style="color:#c6eee1;align-self:center">Cookie policy</a></div>';
+    document.body.appendChild(el);
+    document.getElementById('fl-ga-allow').addEventListener('click', function() {
+      persist('accepted'); el.remove(); loadAnalytics();
+    });
+    document.getElementById('fl-ga-decline').addEventListener('click', function() {
+      persist('declined'); el.remove(); if (window.__fastlaneGA4Loaded) location.reload();
+    });
+  }
+  function setup() {
+    var pref = document.getElementById('fastlane-analytics-settings');
+    if (pref) pref.addEventListener('click', promptChoice);
+    var choice = stored();
+    if (choice === 'accepted') loadAnalytics();
+    else if (choice !== 'declined') promptChoice();
+  }
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', setup);
+  else setup();
+})();
+</script>
+
+<meta name="robots" content="noindex,nofollow">
+</head><body><a class="skip" href="#content">Skip to main content</a><header><a href="/fastlane/">← Fast Lane Central</a></header><main id="content">
+<h1>Final Sale &amp; Refund Policy</h1><p><strong>Effective October 26, 2026.</strong> Published by Fast Lane Ventures LLC, operating Fast Lane Central. Contact: <a href="mailto:contact@fastlanecentral.com">contact@fastlanecentral.com</a>.</p>
+<div class="notice"><strong>ALL DIGITAL PRODUCT SALES ARE FINAL.</strong> By checking the required acknowledgment at checkout and completing payment, you accept this policy and our <a href="/fastlane/terms.html">Terms of Service</a>. We do not provide discretionary refunds for a change of mind, an unused download, a mistaken choice between accurately described products, or dissatisfaction with outcomes not promised in the product description.</div>
+<h2>1. Digital downloads and access</h2><p>Our downloadable software, templates, PDFs, checklists, courses, and similar digital goods are generally delivered electronically after successful payment. Once the purchased content or access has been supplied, the transaction is final to the fullest extent permitted by applicable law. The checkout screen should display this rule before payment and require a separate positive acknowledgment where supported.</p>
+<h2>2. What is not a discretionary refund reason</h2><p>We do not ordinarily refund because you changed your mind, no longer need the product, did not read the product description, chose not to use it, lack compatible software disclosed in the listing, expected features not advertised, or did not achieve a specific business or financial result.</p>
+<h2>3. Delivery errors, defects, and mandatory rights</h2><p>If the wrong file was delivered, the download was inaccessible, or the content materially fails to match its description, contact <a href="mailto:contact@fastlanecentral.com">contact@fastlanecentral.com</a> with the order reference and a description of the issue. We will investigate and, where appropriate, re-deliver, replace or correct the product. If applicable law requires a refund, cancellation, repair, replacement or other remedy, those rights remain available. Nothing in this policy restricts mandatory consumer protections or lawful payment-provider dispute processes.</p>
+<h2>4. Immediate delivery and withdrawal rights</h2><p>Where an applicable jurisdiction allows consumers to lose a statutory withdrawal right for digital content after immediate supply begins, that result only applies if the legally required prior express consent, acknowledgment and confirmation were properly obtained. A purchase or checkbox does not itself eliminate all statutory withdrawal rights.</p>
+<h2>5. Custom website, application and agency projects</h2><p>Custom services are governed by their signed statement of work or proposal, including scope, milestones, termination terms, acceptance criteria and deposit treatment. Fees for agreed work already performed or nonrecoverable committed expenses are generally nonrefundable to the extent permitted by applicable law and the signed agreement. Unperformed work and cancellation rights are handled according to that agreement and applicable law. Digital-product checkout terms alone do not substitute for a signed custom-services agreement.</p>
+<h2>6. Support and disputes</h2><p>For a missing download, mistaken charge, incorrect product or technical defect, send the order reference and a concise explanation to <a href="mailto:contact@fastlanecentral.com">contact@fastlanecentral.com</a>. We will review the issue; you retain all rights that cannot lawfully be waived. This policy does not authorize misleading representations or prevent customers from contacting their payment provider.</p>
+
+<footer><nav aria-label="Legal information"><a href="/fastlane/terms.html">Terms of Service</a><a href="/fastlane/refund-policy.html">Final Sale / Refund Policy</a><a href="/fastlane/privacy.html">Privacy Policy</a><a href="/fastlane/cookie-policy.html">Cookies</a><a href="/fastlane/accessibility.html">Accessibility</a></nav><p><small>© 2026 Fast Lane Ventures LLC · <a href="/fastlane/">Return home</a></small></p></footer></main></body></html>

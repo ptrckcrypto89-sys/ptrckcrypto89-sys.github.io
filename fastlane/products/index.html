@@ -1,0 +1,58 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#112322"><title>Shop digital business tools | Fast Lane Central</title><meta name="description" content="Digital CRM software, cleaning estimates, client tracking and workflow tools"><link rel="canonical" href="https://fastlanecentral.com/products/"><style>
+:root{--bg:#f5f3ed;--ink:#112322;--muted:#54635d;--accent:#ef704b;--card:#fffefa;--line:#d9ddd4}*{box-sizing:border-box}body{font:16px/1.6 system-ui,-apple-system,Segoe UI,Arial;background:var(--bg);margin:0;color:var(--ink)}a{color:#255344;text-underline-offset:3px}a:focus-visible,input:focus-visible,textarea:focus-visible{outline:3px solid var(--accent);outline-offset:3px}header{background:#112322;color:white}.wrap{width:min(1100px,calc(100% - 34px));margin:auto}nav{display:flex;align-items:center;gap:21px;flex-wrap:wrap;padding:19px 0}nav a{color:inherit;text-decoration:none;font-weight:650}main{min-height:60vh;padding:52px 0}h1{font-size:clamp(32px,5vw,55px);line-height:1.12;letter-spacing:-.045em}h2{font-size:clamp(24px,3vw,36px);letter-spacing:-.035em}.lead{max-width:780px;color:var(--muted);font-size:18px}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:17px}.box{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:26px}.box h3{margin:8px 0}.btn,button{display:inline-block;border:0;border-radius:999px;padding:13px 21px;font:700 15px system-ui;background:var(--accent);color:var(--ink);cursor:pointer;text-decoration:none}.btn.alt{background:#dcebe1}.meta{font-size:13px;color:#53635c}.tag{display:inline-block;color:#2f5a49;background:#e2f0e6;border-radius:99px;padding:5px 11px;font-size:12px;font-weight:750}img.cover{width:100%;height:210px;object-fit:contain;background:#e9eee7;border-radius:12px}.legal{padding:22px 0;border-top:1px solid var(--line);display:flex;gap:15px;flex-wrap:wrap;font-size:13px}.legal a{color:#324e43}.notice{background:#e2efe6;border-left:5px solid #32684a;padding:17px;margin:18px 0}label{display:block;font-weight:700;margin:15px 0 5px}input:not([type=checkbox]),textarea,select{width:100%;padding:11px;border:1px solid #b9c9bc;border-radius:10px;background:#fff;font:inherit}textarea{min-height:110px}.checks{display:flex;gap:11px;align-items:flex-start;margin:22px 0}.checks input{width:21px;height:21px;flex-shrink:0}.checks label{display:inline;font-weight:500;margin:0}table{border-collapse:collapse;width:100%;background:white}th,td{border-bottom:1px solid var(--line);text-align:left;padding:10px}.small{font-size:14px}@media(max-width:600px){main{padding:28px 0}nav{gap:12px}} </style>
+<!-- Fast Lane Central: optional Google Analytics 4; loads only on visitor consent. -->
+<script>
+(function() {
+  'use strict';
+  var KEY = 'fastlane_ga_consent_v1';
+  var ID = 'G-1Q6HTWK42K';
+  function stored() { try { return localStorage.getItem(KEY); } catch (e) { return null; } }
+  function persist(value) { try { localStorage.setItem(KEY, value); } catch (e) {} }
+  function loadAnalytics() {
+    if (window.__fastlaneGA4Loaded) return;
+    window.__fastlaneGA4Loaded = true;
+    window.dataLayer = window.dataLayer || [];
+    window.gtag = function() { window.dataLayer.push(arguments); };
+    window.gtag('js', new Date());
+    window.gtag('config', ID, { send_page_view: true, allow_google_signals: false, allow_ad_personalization_signals: false });
+    var script = document.createElement('script');
+    script.async = true;
+    script.src = 'https://www.googletagmanager.com/gtag/js?id=' + encodeURIComponent(ID);
+    document.head.appendChild(script);
+    document.addEventListener('submit', function(ev) {
+      var form = ev.target;
+      if (form && form.tagName === 'FORM' && /^https:\/\/(?:www\.)?payhip\.com\/b\//i.test(form.action)) {
+        window.gtag('event', 'begin_checkout', { checkout_provider: 'Payhip', transport_type: 'beacon' });
+      }
+    }, true);
+  }
+  function promptChoice() {
+    if (document.getElementById('fastlane-analytics-choice')) return;
+    var el = document.createElement('section');
+    el.id = 'fastlane-analytics-choice';
+    el.setAttribute('role', 'region');
+    el.setAttribute('aria-label', 'Optional visitor analytics');
+    el.style.cssText = 'position:fixed;bottom:14px;left:14px;right:14px;max-width:460px;z-index:2147483645;background:#112322;color:#fffefa;border:1px solid #497464;border-radius:12px;padding:18px;box-shadow:0 12px 38px #0005;font:14px/1.5 system-ui,sans-serif';
+    el.innerHTML = '<strong style="font-size:16px">Website analytics</strong><p style="margin:9px 0 15px">Allow optional Google Analytics to measure visits and improve our website? No advertising cookies are required.</p><div style="display:flex;gap:9px;flex-wrap:wrap"><button type="button" id="fl-ga-allow" style="border:0;background:#ef704b;color:#112322;border-radius:7px;padding:9px 13px;font:700 13px system-ui;cursor:pointer">Allow analytics</button><button type="button" id="fl-ga-decline" style="background:transparent;color:#fffefa;border:1px solid #c1d2cb;border-radius:7px;padding:9px 13px;font:700 13px system-ui;cursor:pointer">Decline</button><a href="/fastlane/cookie-policy.html" style="color:#c6eee1;align-self:center">Cookie policy</a></div>';
+    document.body.appendChild(el);
+    document.getElementById('fl-ga-allow').addEventListener('click', function() {
+      persist('accepted'); el.remove(); loadAnalytics();
+    });
+    document.getElementById('fl-ga-decline').addEventListener('click', function() {
+      persist('declined'); el.remove(); if (window.__fastlaneGA4Loaded) location.reload();
+    });
+  }
+  function setup() {
+    var pref = document.getElementById('fastlane-analytics-settings');
+    if (pref) pref.addEventListener('click', promptChoice);
+    var choice = stored();
+    if (choice === 'accepted') loadAnalytics();
+    else if (choice !== 'declined') promptChoice();
+  }
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', setup);
+  else setup();
+})();
+</script>
+
+<meta name="robots" content="noindex,nofollow">
+</head><body><header><nav class="wrap"><a href="/fastlane/"><b>F</b> FAST LANE CENTRAL</a><a href="/fastlane/products/">Digital products</a><a href="/fastlane/#services">Custom development</a><a href="/fastlane/terms.html">Terms</a></nav></header><main class="wrap"><div class="tag">Digital software & downloads</div><h1>Business software built for real workflows.</h1><p class="lead">Downloadable tools for organizing quotes, customers, projects and appointments. Every listing states what is included before checkout.</p><section class="grid"><article class="box"><span class="tag">Cleaning</span><h3>CleanOps Pro</h3><p>Cleaning business CRM and job estimate workspace</p><p class="meta">Organize cleaning clients, job records, customizable estimates and manual data backups.</p><a class="btn" href="/fastlane/products/cleanops-pro/">View product &amp; purchase terms</a></article><article class="box"><img class="cover" loading="lazy" alt="StudioFlow digital product cover" src="/fastlane/assets/covers/studioflow-cover.png"><span class="tag">Photography</span><h3>StudioFlow</h3><p>Photography client CRM and project timeline workspace</p><p class="meta">Keep client inquiries, project details, timelines and local records organized.</p><a class="btn" href="/fastlane/products/studioflow/">View product &amp; purchase terms</a></article><article class="box"><img class="cover" loading="lazy" alt="Lash ReturnFlow digital product cover" src="/fastlane/assets/covers/lash-returnflow-cover.png"><span class="tag">Beauty</span><h3>Lash ReturnFlow</h3><p>Lash technician CRM and rebooking planner</p><p class="meta">Record lash client details, appointments, deposits and planned return visits.</p><a class="btn" href="/fastlane/products/lash-returnflow/">View product &amp; purchase terms</a></article><article class="box"><img class="cover" loading="lazy" alt="CleanQuote digital product cover" src="/fastlane/assets/covers/cleanquote-cover.png"><span class="tag">Cleaning</span><h3>CleanQuote</h3><p>Cleaning quote and margin calculator</p><p class="meta">Create cleaning estimates with editable labor, travel, supply and overhead assumptions.</p><a class="btn" href="/fastlane/products/cleanquote/">View product &amp; purchase terms</a></article><article class="box"><img class="cover" loading="lazy" alt="ClientFlow Starter digital product cover" src="/fastlane/assets/covers/clientflow-starter-cover.png"><span class="tag">Business</span><h3>ClientFlow Starter</h3><p>Client intake CRM and project organizer</p><p class="meta">Track intake details, project stages and the next client follow-up action.</p><a class="btn" href="/fastlane/products/clientflow-starter/">View product &amp; purchase terms</a></article></section><p class="notice">Review product requirements and the <a href="/fastlane/refund-policy.html">Final Sale Policy</a> before paying. No discretionary refunds for a change of mind after correct delivery; legal rights remain available.</p></main><footer class="wrap"><div class="legal"><span>© 2026 Fast Lane Ventures LLC</span><a href="/fastlane/terms.html">Terms</a><a href="/fastlane/refund-policy.html">Final Sale Policy</a><a href="/fastlane/privacy.html">Privacy</a><a href="/fastlane/cookie-policy.html">Cookies</a><a href="/fastlane/accessibility.html">Accessibility</a><a href="mailto:contact@fastlanecentral.com">Email support</a></div></footer></body></html>
