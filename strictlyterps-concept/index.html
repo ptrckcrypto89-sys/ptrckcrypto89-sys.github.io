@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow, noarchive">
+  <meta name="theme-color" content="#0d0b16">
+  <meta name="description" content="Unofficial web design concept for Strictly Terps, a cannabis dispensary in Billings, Montana. For adults 21+. Not affiliated with Strictly Terps.">
+  <title>Strictly Terps | Billings, MT — Unofficial Website Concept</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap');
+    :root {--bg:#0d0b16;--bg2:#171326;--surface:#211b33;--line:#3e3152;--white:#f8f4f0;--muted:#b9b0c5;--lav:#c0a2ff;--gold:#e6ae6d;--fuchsia:#ed7db9;--radius:22px}
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;color:var(--white);background:var(--bg);font-family:'DM Sans',sans-serif;line-height:1.6;overflow-x:hidden}
+    body.age-locked{overflow:hidden}
+    a{color:inherit;text-decoration:none}button,input{font:inherit}
+    a:focus-visible,button:focus-visible,input:focus-visible{outline:3px solid var(--gold);outline-offset:4px}
+    .wrap{width:min(1200px,calc(100% - 48px));margin-inline:auto}
+    .concept-strip{background:#bb97ff;color:#150d23;text-align:center;padding:9px 18px;font-size:11px;font-weight:800;letter-spacing:.13em;text-transform:uppercase;position:relative;z-index:30}
+    .header{position:sticky;top:0;z-index:20;border-bottom:1px solid #ffffff16;background:#0d0b16eb;backdrop-filter:blur(20px)}
+    .header-inner{display:flex;justify-content:space-between;align-items:center;min-height:86px;gap:25px}
+    .logo{display:flex;align-items:center;gap:11px;white-space:nowrap}
+    .logo-mark{width:42px;height:42px;border:1px solid #b893fa89;border-radius:12px;display:grid;place-items:center;font-weight:900;letter-spacing:-3px;font-size:20px;color:#f5c384;background:linear-gradient(135deg,#312145,#140f1f);box-shadow:inset 0 0 14px #6639aa55}
+    .logo-text{font-family:Manrope,sans-serif;font-size:21px;font-weight:800;letter-spacing:-.09em}
+    .logo-text span{color:var(--lav)}
+    nav{display:flex;gap:32px;align-items:center;font-size:13px;font-weight:700;color:#d8d2df}
+    nav a:hover{color:var(--gold)}
+    .button{display:inline-flex;align-items:center;justify-content:center;gap:12px;border-radius:100px;font-size:13px;letter-spacing:.055em;text-transform:uppercase;font-weight:800;padding:16px 23px;border:1px solid transparent;transition:transform .2s,border-color .2s,background .2s;cursor:pointer}
+    .button:hover{transform:translateY(-2px)}
+    .button-primary{background:linear-gradient(100deg,#d3acff 0%,#f2a96b 100%);color:#1e1027;box-shadow:0 6px 45px #df9ef32e}
+    .button-outline{border-color:#78628f;color:var(--white);background:#ffffff06}
+    .button-outline:hover{border-color:#d2b1ff;background:#ffffff0d}
+    .nav-button{padding:12px 21px;white-space:nowrap}
+    .eyebrow{display:inline-flex;gap:13px;align-items:center;color:var(--gold);text-transform:uppercase;letter-spacing:.22em;font-size:11px;font-weight:800}
+    .eyebrow:before{content:'';width:28px;height:1px;background:var(--gold)}
+    h1,h2,h3,p{margin-top:0}
+    h1,h2,h3{font-family:Manrope,sans-serif}
+    h1{font-size:clamp(55px,7.1vw,110px);line-height:.98;letter-spacing:-.087em;margin:27px 0 30px;font-weight:800;max-width:780px}
+    h1 em{font-style:normal;background:linear-gradient(115deg,#d1a9ff,#e5b376 95%);background-clip:text;-webkit-background-clip:text;color:transparent}
+    h2{font-size:clamp(36px,4.8vw,64px);line-height:1.11;letter-spacing:-.075em;font-weight:800;margin:17px 0 23px}
+    h3{letter-spacing:-.04em}
+    .hero{min-height:720px;position:relative;overflow:hidden;display:flex;align-items:center;border-bottom:1px solid #332643}
+    .hero:before{content:'';position:absolute;inset:0;z-index:0;background:radial-gradient(ellipse at 81% 40%,#622e8d66 0%,transparent 32%),radial-gradient(ellipse at 94% 62%,#db7b483b 0%,transparent 34%),linear-gradient(100deg,#0d0b16 26%,#191026 80%)}
+    .hero-grid{position:absolute;inset:0;opacity:.18;background-image:linear-gradient(#81649f40 1px,transparent 1px),linear-gradient(90deg,#81649f40 1px,transparent 1px);background-size:72px 72px;mask-image:linear-gradient(90deg,transparent,black)}
+    .hero-inner{display:grid;grid-template-columns:1.25fr .75fr;gap:42px;position:relative;z-index:2;align-items:center;padding-block:96px 120px}
+    .hero-left>p{font-size:17px;color:#c4bcca;max-width:575px;line-height:1.85;margin-bottom:34px}
+    .cta-row{display:flex;flex-wrap:wrap;gap:13px;margin-bottom:52px}
+    .hero-pills{display:flex;flex-wrap:wrap;gap:17px;color:#bdb3c8;font-size:12px;font-weight:700}
+    .hero-pills span{display:inline-flex;gap:9px;align-items:center}
+    .hero-pills span:before{content:'';display:block;width:6px;height:6px;border-radius:50%;background:var(--gold);box-shadow:0 0 12px var(--gold)}
+    .hero-art{height:510px;position:relative;display:grid;place-items:center;isolation:isolate}
+    .hero-art:before{content:'';width:440px;height:440px;max-width:100%;position:absolute;border:1px solid #c99bf459;border-radius:50%;box-shadow:inset 0 0 40px #a35bce30,0 0 0 40px #8563ac0a,0 0 0 85px #8155a50a}
+    .orbit{position:absolute;border:1px dashed #cfa5e754;border-radius:50%;width:350px;height:350px;transform:rotate(-20deg);animation:spin 60s linear infinite}
+    .orb{width:270px;height:270px;position:relative;border-radius:50%;border:1px solid #eec29e72;box-shadow:0 0 110px #9c4db466,inset -20px -25px 70px #2c143d, inset 20px 22px 55px #f6b88626;display:grid;place-items:center;background:radial-gradient(circle at 25% 20%,#8e5476,#43214f 35%,#1c1229 72%);overflow:hidden}
+    .orb:before{content:'';position:absolute;inset:20px;border-radius:50%;border:1px solid #ffffff24}
+    .orb .st{font-size:110px;font-weight:800;letter-spacing:-.15em;line-height:1;color:#f0ccac;text-shadow:0 4px 20px #100b26}
+    .orb .inscription{position:absolute;bottom:61px;font-size:10px;letter-spacing:.4em;font-weight:800;color:#dbb3e9}
+    .spark{position:absolute;color:#f6d199;font-size:27px;text-shadow:0 0 26px #e5a8ce}
+    .spark.s1{top:18px;left:36px}.spark.s2{right:9px;top:107px;font-size:16px}.spark.s3{bottom:52px;left:23px;font-size:18px}.spark.s4{right:20px;bottom:40px}
+    .float-card{position:absolute;background:#1d1629d9;backdrop-filter:blur(12px);border:1px solid #aa79c052;border-radius:15px;padding:15px 19px;box-shadow:0 15px 45px #08060a70}
+    .float-card .mini{color:#bfaecf;text-transform:uppercase;font-size:9px;letter-spacing:.2em;font-weight:800}.float-card strong{display:block;font-size:14px;letter-spacing:-.01em;margin-top:2px}
+    .float-card.one{right:-18px;top:58px}.float-card.two{left:-22px;bottom:30px}
+    .strip{background:#21172c;border-bottom:1px solid #423149;border-top:1px solid #423149}
+    .strip-inner{padding:21px 0;display:flex;justify-content:space-between;gap:30px;align-items:center;color:#e4dce7;font-size:12px;letter-spacing:.13em;text-transform:uppercase;font-weight:800}
+    .strip-inner span:not(:last-child):after{content:'✦';color:var(--gold);margin-left:44px}
+    .section{padding:112px 0}
+    .section-intro{max-width:750px;margin-bottom:44px}
+    .section-intro>p{max-width:630px;color:var(--muted);font-size:16px;line-height:1.8}
+    .features{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .feature{background:linear-gradient(155deg,#241930,#171221);padding:35px;border:1px solid #463454;border-radius:18px;min-height:300px;position:relative;overflow:hidden}
+    .feature:after{content:'';position:absolute;width:180px;height:180px;border:1px solid #a16dd62a;border-radius:50%;right:-90px;bottom:-100px}
+    .feature .num{display:inline-block;font-family:Manrope,sans-serif;color:var(--gold);font-size:12px;letter-spacing:.24em;margin-bottom:58px;font-weight:800}
+    .feature h3{font-size:23px;margin-bottom:13px}
+    .feature p{font-size:14px;color:#bbadca;line-height:1.8;margin:0;max-width:300px}
+    .experience{background:radial-gradient(ellipse at 75% 30%,#47225e52,transparent 54%),#120f1d}
+    .split{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center}
+    .visual-panel{min-height:460px;border:1px solid #79548279;background:linear-gradient(145deg,#372345,#1b1429 48%,#2f1a31);border-radius:28px;position:relative;overflow:hidden;padding:32px;display:flex;align-items:center;justify-content:center}
+    .visual-panel:before{content:'';width:480px;height:480px;border:1px solid #b98acf33;border-radius:50%;position:absolute;right:-150px;top:-195px}
+    .visual-panel:after{content:'';width:460px;height:460px;border:1px solid #b98acf28;border-radius:50%;position:absolute;left:-200px;bottom:-270px}
+    .panel-center{width:260px;height:260px;border-radius:50%;border:1px solid #f1be9299;display:grid;place-items:center;box-shadow:0 0 80px #ba68c65c,0 0 0 35px #d8a6df0e,0 0 0 78px #d8a6df07;background:radial-gradient(circle at 30% 22%,#8e5987,#28182f 65%);text-align:center;z-index:1}
+    .panel-center span{font-size:11px;letter-spacing:.28em;font-weight:800;color:#f6cd9b}.panel-center strong{display:block;font-size:37px;font-family:Manrope;letter-spacing:-.075em;line-height:1.1;margin:11px 0}.panel-center small{color:#e9bdd5;font-size:10px;letter-spacing:.18em;text-transform:uppercase}
+    .badge-tag{position:absolute;top:25px;left:25px;font-size:10px;text-transform:uppercase;letter-spacing:.2em;color:#ebc1ab;font-weight:800}
+    .copy-stack>p{color:#bcb0c7;font-size:16px;line-height:1.85;max-width:535px}
+    .checklist{list-style:none;padding:0;margin:30px 0 0}.checklist li{display:flex;align-items:flex-start;gap:12px;padding:13px 0;border-top:1px solid #ffffff1c;font-size:14px;font-weight:700}.checklist li:before{content:'↗';color:var(--gold);font-size:18px;line-height:1}
+    .location-wrap{display:grid;grid-template-columns:1.2fr .8fr;border:1px solid #5a4167;border-radius:25px;overflow:hidden;background:#1b1528}
+    .location-art{min-height:390px;position:relative;overflow:hidden;background:radial-gradient(circle at 35% 50%,#5c3a7a 0%,#2e2145 39%,#171426 85%);display:grid;place-items:center}
+    .location-art:before{content:'';position:absolute;inset:0;background-image:linear-gradient(45deg,#eacac408 25%,transparent 25%,transparent 75%,#eacac408 75%),linear-gradient(45deg,#eacac408 25%,transparent 25%,transparent 75%,#eacac408 75%);background-size:56px 56px;background-position:0 0,28px 28px}
+    .map-ring{position:relative;display:grid;place-items:center;width:280px;height:280px;border:1px solid #c59cc469;border-radius:50%;box-shadow:0 0 0 45px #c59cc410,0 0 0 88px #c59cc40b}
+    .map-pin{background:linear-gradient(145deg,#d5a7f5,#f1bc86);color:#21132c;padding:19px 24px;border-radius:13px;font-weight:900;font-family:Manrope;font-size:27px;box-shadow:0 15px 65px #090717ac}
+    .location-art .corner{position:absolute;bottom:27px;left:32px;color:#eecdb1;font-size:11px;letter-spacing:.2em;font-weight:800;text-transform:uppercase}
+    .location-info{padding:47px 45px;display:flex;flex-direction:column;justify-content:center}
+    .location-info h3{font-size:31px;margin:15px 0 8px}.location-info p{color:#c9bdcf;font-size:15px;line-height:1.8;margin:0}
+    .location-info .divider{height:1px;background:#594668;margin:26px 0}.location-info .hours{color:var(--gold);font-weight:700}
+    .location-info .button{margin-top:26px;align-self:flex-start}
+    .faq{display:grid;grid-template-columns:.7fr 1.3fr;gap:65px}
+    .faq details{border-bottom:1px solid #4f3c59;padding:20px 0}.faq summary{cursor:pointer;list-style:none;font-weight:700;font-size:16px;display:flex;justify-content:space-between;gap:20px}.faq summary::-webkit-details-marker{display:none}.faq summary:after{content:'+';font-size:22px;color:var(--gold)}.faq details[open] summary:after{content:'−'}.faq details p{font-size:14px;line-height:1.75;color:var(--muted);margin:12px 25px 0 0}
+    .endcap{text-align:center;padding:100px 0;background:radial-gradient(ellipse at center,#4a286277 0%,#0d0b16 65%);border-top:1px solid #382744}.endcap h2{max-width:660px;margin:20px auto 18px}.endcap p{color:var(--muted);max-width:520px;margin:0 auto 27px}
+    footer{border-top:1px solid #362a43;padding:38px 0 28px}.footer-top{display:flex;justify-content:space-between;gap:30px;flex-wrap:wrap;align-items:center}.footer-top .muted{color:#998da7;font-size:12px}.legal{border-top:1px solid #ffffff16;margin-top:30px;padding-top:22px;color:#9d90aa;font-size:11px;line-height:1.8}
+    .gate{position:fixed;inset:0;z-index:1000;background:#090711f5;backdrop-filter:blur(28px);display:grid;place-items:center;padding:22px}
+    .gate[hidden]{display:none}
+    .gate-card{width:min(100%,475px);border:1px solid #79558c;background:radial-gradient(circle at top,#342345,#17101f 72%);border-radius:24px;padding:45px 34px;text-align:center;box-shadow:0 20px 100px #0009}
+    .gate-symbol{display:grid;place-items:center;width:75px;height:75px;margin:0 auto 24px;border-radius:50%;border:1px solid #c4a0c0;color:#e5b9eb;font-family:Manrope;font-weight:800;font-size:28px}
+    .gate-card h2{font-size:33px;margin:4px 0 12px}.gate-card p{font-size:14px;color:#cbbfd2;max-width:360px;margin:0 auto 25px}.gate-card label{display:block;text-align:left;font-size:12px;text-transform:uppercase;letter-spacing:.12em;color:#debee7;font-weight:800;margin-bottom:9px}.gate-card input{background:#21192a;border:1px solid #7b5a8b;border-radius:9px;width:100%;color:#fff;padding:13px 14px;color-scheme:dark;margin-bottom:15px}.gate-card .button{width:100%}.gate-message{min-height:21px;color:#ffc69e;font-size:12px;margin-top:12px!important}.gate-exit{display:inline-block;margin-top:12px;color:#c6b6ce;text-decoration:underline;font-size:12px}.gate-small{font-size:10px!important;margin-top:19px!important;color:#8d8298!important}
+    @keyframes spin{to{transform:rotate(340deg)}}
+    @media(max-width:1030px){nav{gap:18px}nav a:not(.nav-button){display:none}.hero-inner{grid-template-columns:1fr .8fr}.hero-art{transform:scale(.82);transform-origin:center}.strip-inner{gap:18px}.strip-inner span:not(:last-child):after{margin-left:18px}.split{gap:32px}}
+    @media(max-width:760px){.wrap{width:min(100% - 34px,560px)}.header-inner{min-height:73px}.logo-text{font-size:19px}.logo-mark{width:36px;height:36px}.nav-button{padding:10px 13px;font-size:11px}.hero{min-height:auto}.hero-inner{grid-template-columns:1fr;padding:70px 0 68px;gap:3px}.hero h1{font-size:clamp(51px,12vw,82px)}.hero-art{height:330px;transform:scale(.73);margin:-30px 0 -45px}.hero-art:before{width:400px;height:400px}.float-card.one{right:-3px}.float-card.two{left:5px}.hero-left>p{font-size:15px}.cta-row{margin-bottom:31px}.strip-inner{display:grid;grid-template-columns:1fr 1fr;font-size:10px}.strip-inner span:not(:last-child):after{display:none}.section{padding:75px 0}.features,.split,.location-wrap,.faq{grid-template-columns:1fr}.feature{min-height:235px}.feature .num{margin-bottom:30px}.visual-panel{min-height:350px;order:2}.panel-center{width:210px;height:210px}.location-info{padding:35px 28px}.location-art{min-height:300px}.location-art .map-ring{width:220px;height:220px}.faq{gap:15px}.endcap{padding:70px 0}.footer-top{align-items:flex-start}.gate-card{padding:35px 23px}.concept-strip{font-size:9px;letter-spacing:.07em}}
+    @media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;animation:none!important;transition:none!important}}
+  </style>
+</head>
+<body class="age-locked">
+  <div class="concept-strip">Unofficial website concept · Built by Fast Lane Central · Not the business's official website</div>
+  <header class="header">
+    <div class="wrap header-inner">
+      <a href="#home" class="logo" aria-label="Strictly Terps concept home"><span class="logo-mark">ST</span><span class="logo-text">strictly<span>terps.</span></span></a>
+      <nav aria-label="Primary navigation"><a href="#difference">The Difference</a><a href="#experience">Our Approach</a><a href="#visit">Visit Us</a><a class="button button-primary nav-button" href="https://strictlyterps.immjpos.com/login" target="_blank" rel="noopener noreferrer">Existing Menu <span aria-hidden="true">↗</span></a></nav>
+    </div>
+  </header>
+  <main id="home">
+    <section class="hero" aria-labelledby="hero-title"><div class="hero-grid"></div><div class="wrap hero-inner">
+      <div class="hero-left"><span class="eyebrow">Billings, Montana · Adults 21+</span><h1 id="hero-title">THE NAME<br>SAYS <em>IT ALL.</em></h1><p>An elevated, independent dispensary experience in Billings. Get to know Strictly Terps, find the storefront, and connect with their existing online menu.</p>
+      <div class="cta-row"><a class="button button-primary" href="https://strictlyterps.immjpos.com/login" target="_blank" rel="noopener noreferrer">Browse existing menu <span aria-hidden="true">↗</span></a><a class="button button-outline" href="#visit">Find our location <span aria-hidden="true">↘</span></a></div>
+      <div class="hero-pills"><span>Billings, Montana</span><span>Medical &amp; adult use</span><span>Local storefront</span></div></div>
+      <div class="hero-art" aria-hidden="true"><div class="orbit"></div><span class="spark s1">✧</span><span class="spark s2">✦</span><span class="spark s3">✦</span><span class="spark s4">✧</span><div class="orb"><span class="st">ST</span><span class="inscription">BILLINGS · MT</span></div><div class="float-card one"><div class="mini">Established presence</div><strong>Billings, Montana</strong></div><div class="float-card two"><div class="mini">Online access</div><strong>Existing menu portal ↗</strong></div></div>
+    </div></section>
+    <div class="strip"><div class="wrap strip-inner"><span>Locally located</span><span>Adult-use access</span><span>Existing online menu</span><span>Billings, MT</span></div></div>
+    <section class="section" id="difference"><div class="wrap"><div class="section-intro"><span class="eyebrow">The Strictly Terps Experience</span><h2>Good business.<br>Zero guesswork.</h2><p>Less searching for the basics. More clarity about who you're visiting, where to go, and how to access current information.</p></div>
+      <div class="features"><article class="feature"><span class="num">01 / THE BRAND</span><h3>Distinctly local.</h3><p>Discover an independent Billings dispensary with an identity of its own.</p></article><article class="feature"><span class="num">02 / THE EXPERIENCE</span><h3>Simple to explore.</h3><p>Find the store details you need, with clear navigation on mobile and desktop.</p></article><article class="feature"><span class="num">03 / THE CONNECTION</span><h3>Existing ordering.</h3><p>The current third-party account and menu system stays in place, linked directly from the site.</p></article></div>
+    </div></section>
+    <section class="section experience" id="experience"><div class="wrap split"><div class="visual-panel" aria-label="Decorative Strictly Terps identity artwork"><span class="badge-tag">Brand concept / 001</span><div class="panel-center"><div><span>EXPERIENCE</span><strong>STRICTLY<br>TERPS</strong><small>Billings, Montana</small></div></div></div><div class="copy-stack"><span class="eyebrow">Built Around the Details</span><h2>A clearer first impression.</h2><p>People often discover a business on their phones before ever visiting its storefront. This design gives Strictly Terps a dedicated space to communicate its location, adult-use access, and brand identity.</p><p>The concept connects visitors to the business's existing ordering platform rather than replacing a functioning system.</p><ul class="checklist"><li>Mobile-first navigation and fast-loading layout</li><li>Visible location, directions, and store information</li><li>21+ entry verification concept</li><li>Direct link to the existing ordering system</li></ul></div></div></section>
+    <section class="section" id="visit"><div class="wrap"><div class="section-intro"><span class="eyebrow">Visit Strictly Terps</span><h2>Find us in Billings.</h2><p>The essential information, without the extra clicks. Store hours should be confirmed with the business before travel.</p></div><div class="location-wrap"><div class="location-art" aria-hidden="true"><div class="map-ring"><div class="map-pin">7904</div></div><span class="corner">Alderson Avenue / Billings</span></div><div class="location-info"><span class="eyebrow">Our storefront</span><h3>Strictly Terps</h3><p>7904 Alderson Avenue<br>Billings, Montana 59106</p><div class="divider"></div><span class="eyebrow">Hours shown on existing site</span><p class="hours">9:00 AM – 7:45 PM</p><p style="font-size:12px;margin-top:6px">Hours may change; confirm before visiting.</p><a class="button button-primary" href="https://www.google.com/maps/search/?api=1&amp;query=7904+Alderson+Avenue+Billings+MT+59106" target="_blank" rel="noopener noreferrer">Get directions <span aria-hidden="true">↗</span></a></div></div></div></section>
+    <section class="section" id="questions" style="padding-top:10px"><div class="wrap faq"><div><span class="eyebrow">Good to know</span><h2>A few quick answers.</h2></div><div><details><summary>Where is Strictly Terps located?</summary><p>7904 Alderson Avenue in Billings, Montana. Use the directions button above to open your maps app.</p></details><details><summary>Is this website the official Strictly Terps site?</summary><p>No. This is an independent, unofficial design proposal built by Fast Lane Central for review. The official business website is strictlyterps.com.</p></details><details><summary>Can I access the current online menu?</summary><p>Yes. The menu buttons link to the dispensary's existing third-party ordering portal, where applicable age and account verification are managed by that platform.</p></details><details><summary>Who may enter this website concept?</summary><p>This concept is intended for adults age 21 and older. Its entry screen checks the date of birth submitted for the current session.</p></details></div></div></section>
+    <section class="endcap"><div class="wrap"><span class="eyebrow">Billings, Montana</span><h2>Make the visit<br>straightforward.</h2><p>Explore the current menu through Strictly Terps' existing portal, or get directions to the storefront.</p><div class="cta-row" style="justify-content:center;margin:0"><a class="button button-primary" href="https://strictlyterps.immjpos.com/login" target="_blank" rel="noopener noreferrer">Existing online menu <span aria-hidden="true">↗</span></a><a class="button button-outline" href="#visit">Store information</a></div></div></section>
+  </main>
+  <footer><div class="wrap"><div class="footer-top"><a href="#home" class="logo"><span class="logo-mark">ST</span><span class="logo-text">strictly<span>terps.</span></span></a><span class="muted">7904 Alderson Ave · Billings, MT · Adults 21+</span></div><div class="legal"><strong>UNOFFICIAL DESIGN PREVIEW.</strong> This is a speculative, noncommercial portfolio demonstration prepared by Fast Lane Central. It is not operated, approved, or endorsed by Strictly Terps. All business details are drawn from public sources and require owner confirmation. No products are sold or payments collected through this demonstration. For the official business site visit <a href="https://strictlyterps.com/" target="_blank" rel="noopener noreferrer" style="text-decoration:underline">strictlyterps.com</a>. © 2026 Fast Lane Central · Preview only.</div></div></footer>
+  <section class="gate" id="ageGate" aria-labelledby="ageTitle" aria-modal="true" role="dialog"><div class="gate-card"><div class="gate-symbol">21+</div><span class="eyebrow">Age verification</span><h2 id="ageTitle">Adults only.</h2><p>This unofficial dispensary website concept is intended for adults age 21 or older. Enter your date of birth to continue.</p><form id="gateForm"><label for="dob">Date of birth</label><input type="date" name="dob" id="dob" required autocomplete="bday"><button type="submit" class="button button-primary">Enter website <span aria-hidden="true">→</span></button><p class="gate-message" id="gateMessage" role="alert"></p></form><a class="gate-exit" href="https://www.google.com/">I am under 21 / Exit</a><p class="gate-small">Birthdate is checked in your browser only and is not transmitted or saved. This is a demonstration, not a production compliance verification system.</p></div></section>
+  <script>
+    (function(){
+      'use strict';
+      const gate=document.getElementById('ageGate');
+      const form=document.getElementById('gateForm');
+      const dob=document.getElementById('dob');
+      const message=document.getElementById('gateMessage');
+      const today=new Date();
+      dob.max=new Date(today.getFullYear(),today.getMonth(),today.getDate()).toLocaleDateString('en-CA');
+      try { if(sessionStorage.getItem('st-demo-verified')==='1'){gate.hidden=true;document.body.classList.remove('age-locked');} } catch(e) {}
+      form.addEventListener('submit',function(e){
+        e.preventDefault();
+        const value=dob.value;
+        const m=/^(\d{4})-(\d{2})-(\d{2})$/.exec(value);
+        if(!m){message.textContent='Enter a valid date of birth.';return;}
+        const birth=new Date(Number(m[1]),Number(m[2])-1,Number(m[3]));
+        if(birth.getFullYear()!==Number(m[1])||birth.getMonth()!==Number(m[2])-1||birth.getDate()!==Number(m[3])||birth>today){message.textContent='Enter a valid date of birth.';return;}
+        let age=today.getFullYear()-birth.getFullYear();
+        if(today.getMonth()<birth.getMonth()||(today.getMonth()===birth.getMonth()&&today.getDate()<birth.getDate()))age--;
+        if(age<21){message.textContent='This website is restricted to adults age 21 and older.';return;}
+        try{sessionStorage.setItem('st-demo-verified','1');}catch(e){}
+        gate.hidden=true;document.body.classList.remove('age-locked');document.querySelector('.logo').focus();
+      });
+    })();
+  </script>
+</body>
+</html>
