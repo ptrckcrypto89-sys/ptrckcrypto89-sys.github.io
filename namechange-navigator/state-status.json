@@ -1,6 +1,6 @@
 {
   "last_compiled": "2026-10-25",
-  "website_model": "single_state_selection_website_no_payhip_pdf_distribution",
+  "website_model": "one_nationwide_site_no_new_state_payhip_pdfs",
   "states": [
     {
       "name": "Alabama",
@@ -16,7 +16,10 @@
       "individual_product_created": false,
       "paid_transaction_verified": false,
       "digital_delivery_verified": false,
-      "website_available": true
+      "website_available": true,
+      "public_deployment_verified": true,
+      "public_deployment_http_status": 200,
+      "public_deployment_verified_on": "2026-10-25"
     },
     {
       "name": "Alaska",
@@ -32,7 +35,10 @@
       "individual_product_created": false,
       "paid_transaction_verified": false,
       "digital_delivery_verified": false,
-      "website_available": true
+      "website_available": true,
+      "public_deployment_verified": true,
+      "public_deployment_http_status": 200,
+      "public_deployment_verified_on": "2026-10-25"
     },
     {
       "name": "Arizona",
@@ -48,7 +54,10 @@
       "individual_product_created": false,
       "paid_transaction_verified": false,
       "digital_delivery_verified": false,
-      "website_available": true
+      "website_available": true,
+      "public_deployment_verified": true,
+      "public_deployment_http_status": 200,
+      "public_deployment_verified_on": "2026-10-25"
     },
     {
       "name": "Arkansas",
@@ -64,7 +73,10 @@
       "individual_product_created": false,
       "paid_transaction_verified": false,
       "digital_delivery_verified": false,
-      "website_available": true
+      "website_available": true,
+      "public_deployment_verified": true,
+      "public_deployment_http_status": 200,
+      "public_deployment_verified_on": "2026-10-25"
     },
     {
       "name": "California",
@@ -83,7 +95,10 @@
       "individual_product_created": false,
       "paid_transaction_verified": false,
       "digital_delivery_verified": false,
-      "website_available": true
+      "website_available": true,
+      "public_deployment_verified": true,
+      "public_deployment_http_status": 200,
+      "public_deployment_verified_on": "2026-10-25"
     },
     {
       "name": "Colorado",
@@ -102,7 +117,10 @@
       "individual_product_created": false,
       "paid_transaction_verified": false,
       "digital_delivery_verified": false,
-      "website_available": true
+      "website_available": true,
+      "public_deployment_verified": true,
+      "public_deployment_http_status": 200,
+      "public_deployment_verified_on": "2026-10-25"
     },
     {
       "name": "Connecticut",
@@ -121,7 +139,10 @@
       "individual_product_created": false,
       "paid_transaction_verified": false,
       "digital_delivery_verified": false,
-      "website_available": true
+      "website_available": true,
+      "public_deployment_verified": true,
+      "public_deployment_http_status": 200,
+      "public_deployment_verified_on": "2026-10-25"
     },
     {
       "name": "Delaware",
@@ -135,7 +156,10 @@
       "website_available": true,
       "state_kit_url": null,
       "individual_product_created": false,
-      "state_kit_pdf_included": false
+      "state_kit_pdf_included": false,
+      "public_deployment_verified": true,
+      "public_deployment_http_status": 200,
+      "public_deployment_verified_on": "2026-10-25"
     },
     {
       "name": "Florida",
@@ -150,7 +174,10 @@
       "state_guide_official_sources_reviewed": true,
       "research_reviewed": "2026-10-25",
       "official_source_count": 8,
-      "production_reviewed_page": "https://ptrckcrypto89-sys.github.io/namechange-navigator/states/florida/"
+      "production_reviewed_page": "https://ptrckcrypto89-sys.github.io/namechange-navigator/states/florida/",
+      "public_deployment_verified": true,
+      "public_deployment_http_status": 200,
+      "public_deployment_verified_on": "2026-10-25"
     },
     {
       "name": "Georgia",
@@ -165,7 +192,10 @@
       "state_guide_official_sources_reviewed": true,
       "research_reviewed": "2026-10-25",
       "official_source_count": 9,
-      "production_reviewed_page": "https://ptrckcrypto89-sys.github.io/namechange-navigator/states/georgia/"
+      "production_reviewed_page": "https://ptrckcrypto89-sys.github.io/namechange-navigator/states/georgia/",
+      "public_deployment_verified": true,
+      "public_deployment_http_status": 200,
+      "public_deployment_verified_on": "2026-10-25"
     },
     {
       "name": "Hawaii",
@@ -180,7 +210,10 @@
       "state_guide_official_sources_reviewed": true,
       "research_reviewed": "2026-10-25",
       "official_source_count": 12,
-      "production_reviewed_page": "https://ptrckcrypto89-sys.github.io/namechange-navigator/states/hawaii/"
+      "production_reviewed_page": "https://ptrckcrypto89-sys.github.io/namechange-navigator/states/hawaii/",
+      "public_deployment_verified": true,
+      "public_deployment_http_status": 200,
+      "public_deployment_verified_on": "2026-10-25"
     },
     {
       "name": "Idaho",
@@ -195,7 +228,10 @@
       "state_guide_official_sources_reviewed": true,
       "research_reviewed": "2026-10-25",
       "official_source_count": 9,
-      "production_reviewed_page": "https://ptrckcrypto89-sys.github.io/namechange-navigator/states/idaho/"
+      "production_reviewed_page": "https://ptrckcrypto89-sys.github.io/namechange-navigator/states/idaho/",
+      "public_deployment_verified": true,
+      "public_deployment_http_status": 200,
+      "public_deployment_verified_on": "2026-10-25"
     },
     {
       "name": "Illinois",
@@ -210,7 +246,10 @@
       "state_guide_official_sources_reviewed": true,
       "research_reviewed": "2026-10-25",
       "official_source_count": 11,
-      "production_reviewed_page": "https://ptrckcrypto89-sys.github.io/namechange-navigator/states/illinois/"
+      "production_reviewed_page": "https://ptrckcrypto89-sys.github.io/namechange-navigator/states/illinois/",
+      "public_deployment_verified": true,
+      "public_deployment_http_status": 200,
+      "public_deployment_verified_on": "2026-10-25"
     },
     {
       "name": "Indiana",
@@ -225,7 +264,10 @@
       "state_guide_official_sources_reviewed": true,
       "research_reviewed": "2026-10-25",
       "official_source_count": 11,
-      "production_reviewed_page": "https://ptrckcrypto89-sys.github.io/namechange-navigator/states/indiana/"
+      "production_reviewed_page": "https://ptrckcrypto89-sys.github.io/namechange-navigator/states/indiana/",
+      "public_deployment_verified": true,
+      "public_deployment_http_status": 200,
+      "public_deployment_verified_on": "2026-10-25"
     },
     {
       "name": "Iowa",
@@ -412,9 +454,10 @@
       "research_reviewed": "2026-10-25",
       "official_source_count": 16,
       "production_reviewed_page": "https://ptrckcrypto89-sys.github.io/namechange-navigator/states/mississippi/",
-      "public_deployment_verified": false,
-      "public_deployment_http_status": null,
-      "last_deployment_commit": null
+      "public_deployment_verified": true,
+      "public_deployment_http_status": 200,
+      "last_deployment_commit": null,
+      "public_deployment_verified_on": "2026-10-25"
     },
     {
       "name": "Missouri",
@@ -430,8 +473,9 @@
       "research_reviewed": "2026-10-25",
       "official_source_count": 17,
       "production_reviewed_page": "https://ptrckcrypto89-sys.github.io/namechange-navigator/states/missouri/",
-      "public_deployment_verified": false,
-      "public_deployment_http_status": null
+      "public_deployment_verified": true,
+      "public_deployment_http_status": 200,
+      "public_deployment_verified_on": "2026-10-25"
     },
     {
       "name": "Montana",
@@ -447,7 +491,10 @@
       "individual_product_created": false,
       "paid_transaction_verified": false,
       "digital_delivery_verified": false,
-      "website_available": true
+      "website_available": true,
+      "public_deployment_verified": true,
+      "public_deployment_http_status": 200,
+      "public_deployment_verified_on": "2026-10-25"
     },
     {
       "name": "Nebraska",
@@ -463,8 +510,9 @@
       "research_reviewed": "2026-10-25",
       "official_source_count": 18,
       "production_reviewed_page": "https://ptrckcrypto89-sys.github.io/namechange-navigator/states/nebraska/",
-      "public_deployment_verified": false,
-      "public_deployment_http_status": null
+      "public_deployment_verified": true,
+      "public_deployment_http_status": 200,
+      "public_deployment_verified_on": "2026-10-25"
     },
     {
       "name": "Nevada",
@@ -480,8 +528,9 @@
       "research_reviewed": "2026-10-25",
       "official_source_count": 18,
       "production_reviewed_page": "https://ptrckcrypto89-sys.github.io/namechange-navigator/states/nevada/",
-      "public_deployment_verified": false,
-      "public_deployment_http_status": null
+      "public_deployment_verified": true,
+      "public_deployment_http_status": 200,
+      "public_deployment_verified_on": "2026-10-25"
     },
     {
       "name": "New Hampshire",
@@ -497,8 +546,9 @@
       "research_reviewed": "2026-10-25",
       "official_source_count": 16,
       "production_reviewed_page": "https://ptrckcrypto89-sys.github.io/namechange-navigator/states/new-hampshire/",
-      "public_deployment_verified": false,
-      "public_deployment_http_status": null
+      "public_deployment_verified": true,
+      "public_deployment_http_status": 200,
+      "public_deployment_verified_on": "2026-10-25"
     },
     {
       "name": "New Jersey",
@@ -514,8 +564,9 @@
       "research_reviewed": "2026-10-25",
       "official_source_count": 16,
       "production_reviewed_page": "https://ptrckcrypto89-sys.github.io/namechange-navigator/states/new-jersey/",
-      "public_deployment_verified": false,
-      "public_deployment_http_status": null
+      "public_deployment_verified": true,
+      "public_deployment_http_status": 200,
+      "public_deployment_verified_on": "2026-10-25"
     },
     {
       "name": "New Mexico",
@@ -531,8 +582,9 @@
       "research_reviewed": "2026-10-25",
       "official_source_count": 17,
       "production_reviewed_page": "https://ptrckcrypto89-sys.github.io/namechange-navigator/states/new-mexico/",
-      "public_deployment_verified": false,
-      "public_deployment_http_status": null
+      "public_deployment_verified": true,
+      "public_deployment_http_status": 200,
+      "public_deployment_verified_on": "2026-10-25"
     },
     {
       "name": "New York",
@@ -548,8 +600,9 @@
       "research_reviewed": "2026-10-25",
       "official_source_count": 18,
       "production_reviewed_page": "https://ptrckcrypto89-sys.github.io/namechange-navigator/states/new-york/",
-      "public_deployment_verified": false,
-      "public_deployment_http_status": null
+      "public_deployment_verified": true,
+      "public_deployment_http_status": 200,
+      "public_deployment_verified_on": "2026-10-25"
     },
     {
       "name": "North Carolina",
@@ -565,8 +618,9 @@
       "research_reviewed": "2026-10-25",
       "official_source_count": 16,
       "production_reviewed_page": "https://ptrckcrypto89-sys.github.io/namechange-navigator/states/north-carolina/",
-      "public_deployment_verified": false,
-      "public_deployment_http_status": null
+      "public_deployment_verified": true,
+      "public_deployment_http_status": 200,
+      "public_deployment_verified_on": "2026-10-25"
     },
     {
       "name": "North Dakota",
@@ -582,8 +636,9 @@
       "research_reviewed": "2026-10-25",
       "official_source_count": 15,
       "production_reviewed_page": "https://ptrckcrypto89-sys.github.io/namechange-navigator/states/north-dakota/",
-      "public_deployment_verified": false,
-      "public_deployment_http_status": null
+      "public_deployment_verified": true,
+      "public_deployment_http_status": 200,
+      "public_deployment_verified_on": "2026-10-25"
     },
     {
       "name": "Ohio",
@@ -599,8 +654,9 @@
       "research_reviewed": "2026-10-25",
       "official_source_count": 15,
       "production_reviewed_page": "https://ptrckcrypto89-sys.github.io/namechange-navigator/states/ohio/",
-      "public_deployment_verified": false,
-      "public_deployment_http_status": null
+      "public_deployment_verified": true,
+      "public_deployment_http_status": 200,
+      "public_deployment_verified_on": "2026-10-25"
     },
     {
       "name": "Oklahoma",
@@ -616,8 +672,9 @@
       "research_reviewed": "2026-10-25",
       "official_source_count": 17,
       "production_reviewed_page": "https://ptrckcrypto89-sys.github.io/namechange-navigator/states/oklahoma/",
-      "public_deployment_verified": false,
-      "public_deployment_http_status": null
+      "public_deployment_verified": true,
+      "public_deployment_http_status": 200,
+      "public_deployment_verified_on": "2026-10-25"
     },
     {
       "name": "Oregon",
@@ -633,8 +690,9 @@
       "research_reviewed": "2026-10-25",
       "official_source_count": 14,
       "production_reviewed_page": "https://ptrckcrypto89-sys.github.io/namechange-navigator/states/oregon/",
-      "public_deployment_verified": false,
-      "public_deployment_http_status": null
+      "public_deployment_verified": true,
+      "public_deployment_http_status": 200,
+      "public_deployment_verified_on": "2026-10-25"
     },
     {
       "name": "Pennsylvania",
@@ -650,8 +708,9 @@
       "research_reviewed": "2026-10-25",
       "official_source_count": 15,
       "production_reviewed_page": "https://ptrckcrypto89-sys.github.io/namechange-navigator/states/pennsylvania/",
-      "public_deployment_verified": false,
-      "public_deployment_http_status": null
+      "public_deployment_verified": true,
+      "public_deployment_http_status": 200,
+      "public_deployment_verified_on": "2026-10-25"
     },
     {
       "name": "Rhode Island",
@@ -667,8 +726,9 @@
       "research_reviewed": "2026-10-25",
       "official_source_count": 10,
       "production_reviewed_page": "https://ptrckcrypto89-sys.github.io/namechange-navigator/states/rhode-island/",
-      "public_deployment_verified": false,
-      "public_deployment_http_status": null
+      "public_deployment_verified": true,
+      "public_deployment_http_status": 200,
+      "public_deployment_verified_on": "2026-10-25"
     },
     {
       "name": "South Carolina",
@@ -684,8 +744,9 @@
       "research_reviewed": "2026-10-25",
       "official_source_count": 9,
       "production_reviewed_page": "https://ptrckcrypto89-sys.github.io/namechange-navigator/states/south-carolina/",
-      "public_deployment_verified": false,
-      "public_deployment_http_status": null
+      "public_deployment_verified": true,
+      "public_deployment_http_status": 200,
+      "public_deployment_verified_on": "2026-10-25"
     },
     {
       "name": "South Dakota",
@@ -701,8 +762,9 @@
       "research_reviewed": "2026-10-25",
       "official_source_count": 8,
       "production_reviewed_page": "https://ptrckcrypto89-sys.github.io/namechange-navigator/states/south-dakota/",
-      "public_deployment_verified": false,
-      "public_deployment_http_status": null
+      "public_deployment_verified": true,
+      "public_deployment_http_status": 200,
+      "public_deployment_verified_on": "2026-10-25"
     },
     {
       "name": "Tennessee",
@@ -718,8 +780,9 @@
       "research_reviewed": "2026-10-25",
       "official_source_count": 7,
       "production_reviewed_page": "https://ptrckcrypto89-sys.github.io/namechange-navigator/states/tennessee/",
-      "public_deployment_verified": false,
-      "public_deployment_http_status": null
+      "public_deployment_verified": true,
+      "public_deployment_http_status": 200,
+      "public_deployment_verified_on": "2026-10-25"
     },
     {
       "name": "Texas",
@@ -735,8 +798,9 @@
       "research_reviewed": "2026-10-25",
       "official_source_count": 8,
       "production_reviewed_page": "https://ptrckcrypto89-sys.github.io/namechange-navigator/states/texas/",
-      "public_deployment_verified": false,
-      "public_deployment_http_status": null
+      "public_deployment_verified": true,
+      "public_deployment_http_status": 200,
+      "public_deployment_verified_on": "2026-10-25"
     },
     {
       "name": "Utah",
@@ -752,8 +816,9 @@
       "research_reviewed": "2026-10-25",
       "official_source_count": 9,
       "production_reviewed_page": "https://ptrckcrypto89-sys.github.io/namechange-navigator/states/utah/",
-      "public_deployment_verified": false,
-      "public_deployment_http_status": null
+      "public_deployment_verified": true,
+      "public_deployment_http_status": 200,
+      "public_deployment_verified_on": "2026-10-25"
     },
     {
       "name": "Vermont",
@@ -769,8 +834,9 @@
       "research_reviewed": "2026-10-25",
       "official_source_count": 8,
       "production_reviewed_page": "https://ptrckcrypto89-sys.github.io/namechange-navigator/states/vermont/",
-      "public_deployment_verified": false,
-      "public_deployment_http_status": null
+      "public_deployment_verified": true,
+      "public_deployment_http_status": 200,
+      "public_deployment_verified_on": "2026-10-25"
     },
     {
       "name": "Virginia",
@@ -786,8 +852,9 @@
       "research_reviewed": "2026-10-25",
       "official_source_count": 7,
       "production_reviewed_page": "https://ptrckcrypto89-sys.github.io/namechange-navigator/states/virginia/",
-      "public_deployment_verified": false,
-      "public_deployment_http_status": null
+      "public_deployment_verified": true,
+      "public_deployment_http_status": 200,
+      "public_deployment_verified_on": "2026-10-25"
     },
     {
       "name": "Washington",
@@ -803,8 +870,9 @@
       "research_reviewed": "2026-10-25",
       "official_source_count": 8,
       "production_reviewed_page": "https://ptrckcrypto89-sys.github.io/namechange-navigator/states/washington/",
-      "public_deployment_verified": false,
-      "public_deployment_http_status": null
+      "public_deployment_verified": true,
+      "public_deployment_http_status": 200,
+      "public_deployment_verified_on": "2026-10-25"
     },
     {
       "name": "West Virginia",
@@ -820,8 +888,9 @@
       "research_reviewed": "2026-10-25",
       "official_source_count": 9,
       "production_reviewed_page": "https://ptrckcrypto89-sys.github.io/namechange-navigator/states/west-virginia/",
-      "public_deployment_verified": false,
-      "public_deployment_http_status": null
+      "public_deployment_verified": true,
+      "public_deployment_http_status": 200,
+      "public_deployment_verified_on": "2026-10-25"
     },
     {
       "name": "Wisconsin",
@@ -837,8 +906,9 @@
       "research_reviewed": "2026-10-25",
       "official_source_count": 9,
       "production_reviewed_page": "https://ptrckcrypto89-sys.github.io/namechange-navigator/states/wisconsin/",
-      "public_deployment_verified": false,
-      "public_deployment_http_status": null
+      "public_deployment_verified": true,
+      "public_deployment_http_status": 200,
+      "public_deployment_verified_on": "2026-10-25"
     },
     {
       "name": "Wyoming",
@@ -854,8 +924,22 @@
       "research_reviewed": "2026-10-25",
       "official_source_count": 7,
       "production_reviewed_page": "https://ptrckcrypto89-sys.github.io/namechange-navigator/states/wyoming/",
-      "public_deployment_verified": false,
-      "public_deployment_http_status": null
+      "public_deployment_verified": true,
+      "public_deployment_http_status": 200,
+      "public_deployment_verified_on": "2026-10-25"
     }
-  ]
+  ],
+  "public_release_qa": {
+    "date": "2026-10-25",
+    "checked_states": 50,
+    "live_http_200": 50,
+    "all_have_state_specific_guides": true,
+    "minimum_official_reference_links": 6,
+    "checklist_six_steps_per_state": true,
+    "final_12_mobile_browser_qa": "passed",
+    "states_remaining_research": 0,
+    "paid_customer_access_tested": false,
+    "paid_checkout_tested": false,
+    "search_engine_indexing_confirmed": false
+  }
 }
