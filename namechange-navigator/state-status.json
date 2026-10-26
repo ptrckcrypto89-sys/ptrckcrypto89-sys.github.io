@@ -260,20 +260,28 @@
       "research_reviewed": "2026-10-25",
       "official_source_count": 13,
       "production_reviewed_page": "https://ptrckcrypto89-sys.github.io/namechange-navigator/states/kansas/",
-      "public_deployment_verified": false,
-      "last_deployment_commit": null,
-      "public_deployment_http_status": null
+      "public_deployment_verified": true,
+      "last_deployment_commit": "23eaea64d8acbf594149751e4c2db52f8b1b0eec",
+      "public_deployment_http_status": 200,
+      "public_deployment_verified_on": "2026-10-25"
     },
     {
       "name": "Kentucky",
       "code": "KY",
       "slug": "kentucky",
-      "status": "government_directory_only_research_pending",
+      "status": "website_guide_reviewed",
       "paid_available": false,
       "website_available": true,
       "state_kit_url": null,
       "individual_product_created": false,
-      "state_kit_pdf_included": false
+      "state_kit_pdf_included": false,
+      "state_guide_official_sources_reviewed": true,
+      "research_reviewed": "2026-10-25",
+      "official_source_count": 14,
+      "production_reviewed_page": "https://ptrckcrypto89-sys.github.io/namechange-navigator/states/kentucky/",
+      "public_deployment_verified": false,
+      "public_deployment_http_status": null,
+      "last_deployment_commit": null
     },
     {
       "name": "Louisiana",
