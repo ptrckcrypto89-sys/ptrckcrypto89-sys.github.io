@@ -336,9 +336,10 @@
       "research_reviewed": "2026-10-25",
       "official_source_count": 15,
       "production_reviewed_page": "https://ptrckcrypto89-sys.github.io/namechange-navigator/states/maryland/",
-      "public_deployment_verified": false,
-      "public_deployment_http_status": null,
-      "last_deployment_commit": null
+      "public_deployment_verified": true,
+      "public_deployment_http_status": 200,
+      "last_deployment_commit": "ea2d24d13ca05d0989d4ae308fa52f743af2b8ed",
+      "public_deployment_verified_on": "2026-10-25"
     },
     {
       "name": "Massachusetts",
@@ -354,20 +355,28 @@
       "research_reviewed": "2026-10-25",
       "official_source_count": 15,
       "production_reviewed_page": "https://ptrckcrypto89-sys.github.io/namechange-navigator/states/massachusetts/",
-      "public_deployment_verified": false,
-      "public_deployment_http_status": null,
-      "last_deployment_commit": null
+      "public_deployment_verified": true,
+      "public_deployment_http_status": 200,
+      "last_deployment_commit": "dd9046a7bae5f7005fb1175eb410cc99de12d58b",
+      "public_deployment_verified_on": "2026-10-25"
     },
     {
       "name": "Michigan",
       "code": "MI",
       "slug": "michigan",
-      "status": "government_directory_only_research_pending",
+      "status": "website_guide_reviewed",
       "paid_available": false,
       "website_available": true,
       "state_kit_url": null,
       "individual_product_created": false,
-      "state_kit_pdf_included": false
+      "state_kit_pdf_included": false,
+      "state_guide_official_sources_reviewed": true,
+      "research_reviewed": "2026-10-25",
+      "official_source_count": 16,
+      "production_reviewed_page": "https://ptrckcrypto89-sys.github.io/namechange-navigator/states/michigan/",
+      "public_deployment_verified": false,
+      "public_deployment_http_status": null,
+      "last_deployment_commit": null
     },
     {
       "name": "Minnesota",
