@@ -336,10 +336,9 @@
       "research_reviewed": "2026-10-25",
       "official_source_count": 15,
       "production_reviewed_page": "https://ptrckcrypto89-sys.github.io/namechange-navigator/states/maryland/",
-      "public_deployment_verified": true,
-      "public_deployment_http_status": 200,
-      "last_deployment_commit": "ea2d24d13ca05d0989d4ae308fa52f743af2b8ed",
-      "public_deployment_verified_on": "2026-10-25"
+      "public_deployment_verified": false,
+      "public_deployment_http_status": null,
+      "last_deployment_commit": null
     },
     {
       "name": "Massachusetts",
