@@ -420,12 +420,18 @@
       "name": "Missouri",
       "code": "MO",
       "slug": "missouri",
-      "status": "government_directory_only_research_pending",
+      "status": "website_guide_reviewed",
       "paid_available": false,
       "website_available": true,
       "state_kit_url": null,
       "individual_product_created": false,
-      "state_kit_pdf_included": false
+      "state_kit_pdf_included": false,
+      "state_guide_official_sources_reviewed": true,
+      "research_reviewed": "2026-10-25",
+      "official_source_count": 17,
+      "production_reviewed_page": "https://ptrckcrypto89-sys.github.io/namechange-navigator/states/missouri/",
+      "public_deployment_verified": false,
+      "public_deployment_http_status": null
     },
     {
       "name": "Montana",
