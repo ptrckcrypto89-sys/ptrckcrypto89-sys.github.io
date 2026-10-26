@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow"><meta name="description" content="Independent Fast Lane Central clickable HVAC service triage concept; simulated data only.">
+<title>406 HVAC | Service Operations Concept — Fast Lane Central</title>
+<style>
+:root{--ink:#102c35;--sub:#557075;--lime:#cbf4c8;--mint:#e9f5f1;--navy:#092531;--line:#d8e6e4;--orange:#ffcf8c}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Arial,sans-serif;color:var(--ink);background:#f7faf9}
+.banner{padding:12px 5%;font-size:12px;text-align:center;background:#ffebc3;color:#503812;font-weight:700;line-height:1.6}
+nav{background:#092531;color:#fff;padding:18px max(5%,calc((100% - 1180px)/2));display:flex;justify-content:space-between;align-items:center;gap:16px}
+.logo{font-weight:900;font-size:19px;letter-spacing:-.04em}.by{font-size:12px;color:#afd2cf}
+.pill{border:1px solid #4a6a69;border-radius:25px;padding:7px 12px;font-size:11px;letter-spacing:.08em}
+.hero{padding:66px 5% 60px;background:radial-gradient(circle at 90% 5%,#184553,transparent 40%),var(--navy);color:white}
+.hero .wrap{max-width:1180px;margin:auto;display:grid;grid-template-columns:1.35fr .8fr;align-items:center;gap:45px}
+.kicker{color:var(--lime);font-weight:850;text-transform:uppercase;letter-spacing:.14em;font-size:11px}
+h1{font-size:clamp(38px,5vw,70px);line-height:1.03;letter-spacing:-.055em;margin:15px 0 20px}
+.hero p{color:#d7e5e5;max-width:620px;line-height:1.65;font-size:18px}
+.cta{display:inline-flex;gap:10px;align-items:center;border-radius:11px;background:var(--lime);color:#092531;padding:15px 22px;text-decoration:none;font-weight:800;margin-top:12px}
+.heroaside{border:1px solid #3d6970;background:#ffffff0b;padding:28px;border-radius:20px}
+.heroaside .num{font-size:38px;font-weight:900;letter-spacing:-.05em}.muted{color:#8ab9b9;font-size:13px}.heroaside .item{padding:12px 0;border-bottom:1px solid #3d6970;display:flex;justify-content:space-between;gap:12px}
+.main{max-width:1180px;margin:auto;padding:55px 5% 75px}h2{font-size:clamp(26px,3.2vw,42px);letter-spacing:-.035em;margin:0 0 9px}.lead{color:var(--sub);line-height:1.65;max-width:740px}
+.layout{display:grid;grid-template-columns:1.25fr .75fr;gap:23px;margin:27px 0 52px}
+.panel{background:white;border:1px solid var(--line);border-radius:20px;box-shadow:0 12px 36px #183a3510;padding:25px}.eyebrow{font-size:11px;letter-spacing:.11em;font-weight:900;color:#467a6b;text-transform:uppercase}
+.modegrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin:18px 0}
+.option{display:block;padding:18px;border:1px solid #d2e5e0;border-radius:12px;background:#fafffd;color:var(--ink);text-align:left;cursor:pointer;font:inherit;min-height:100px}
+.option b{display:block;font-size:15px;margin-bottom:7px}.option small{font-size:12px;color:#526d71;line-height:1.45}
+.option[aria-pressed=true]{background:#e7f8ed;border:2px solid #1b7b5e;padding:17px;box-shadow:inset 0 0 0 2px #daf8e7}
+.status{background:#f2f8f5;border-radius:14px;padding:18px;margin-top:18px}
+.priority{font-size:11px;letter-spacing:.07em;font-weight:900;color:#175942;background:#d9f7e8;border-radius:10px;padding:7px 10px;display:inline-block}
+.priority.high{background:#ffead4;color:#86500b}
+.status p{margin:10px 0 0;font-size:14px;color:#4d6567;line-height:1.6}
+.next{margin-top:18px;display:flex;gap:10px;flex-wrap:wrap}
+.next button{padding:13px 17px;border-radius:9px;background:#0d3e48;color:white;border:0;font-weight:800;cursor:pointer}
+.next button.secondary{background:white;border:1px solid #a3c8c0;color:#0d3e48}
+.cardtop{display:flex;justify-content:space-between;gap:10px;align-items:center}.demo{color:#8a5b1a;background:#fff4e0;padding:5px 8px;border-radius:5px;font-size:10px;font-weight:850;white-space:nowrap}
+.queueitem{border:1px solid var(--line);border-radius:12px;padding:15px;margin:12px 0;display:flex;align-items:start;gap:12px}
+.dot{width:11px;height:11px;background:#efb461;border-radius:100%;margin-top:5px;flex-shrink:0}.dot.green{background:#77ba95}.dot.blue{background:#7faec9}
+.queueitem b{display:block;font-size:14px}.queueitem span{display:block;color:#5f7779;font-size:12px;line-height:1.5;margin-top:5px}
+#newjob{display:none}
+.steps{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin:23px 0}
+.step{background:#fff;border:1px solid var(--line);border-radius:14px;padding:22px}.step .number{color:#3b806a;font-size:12px;font-weight:900}.step h3{margin:13px 0 6px;font-size:18px;letter-spacing:-.02em}.step p{font-size:14px;color:var(--sub);line-height:1.6;margin:0}
+.disclaimer{background:#e8f3f0;border-radius:14px;padding:23px;color:#365654;font-size:13px;line-height:1.7}
+footer{background:#092531;color:white;padding:32px 5%;text-align:center;font-size:13px}
+footer a{color:#bce9cf}.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0)}
+@media(max-width:800px){.hero .wrap,.layout{grid-template-columns:1fr}.hero{padding:46px 5%}.steps{grid-template-columns:1fr}.heroaside{display:none}}
+@media(max-width:460px){.modegrid{grid-template-columns:1fr}nav{padding:16px 5%}.pill{display:none}.panel{padding:18px}}
+</style></head>
+<body><div class="banner">UNOFFICIAL INDEPENDENT BUSINESS PROPOSAL — NOT AFFILIATED WITH OR APPROVED BY 406 HVAC — ALL REQUESTS & DASHBOARD DATA ARE SIMULATED</div>
+<nav><div><div class="logo">406 HVAC <span style="font-weight:400;color:#b5dfd9">/ concept</span></div><div class="by">Prepared by Fast Lane Central</div></div><div class="pill">OPERATIONS PROTOTYPE · NO LIVE INTEGRATION</div></nav>
+<header class="hero"><div class="wrap"><div><div class="kicker">Billings, Montana · HVAC request workflow</div><h1>Every service request.<br>One clear next step.</h1><p>Separate emergency calls, planned maintenance, and commercial refrigeration work into the right follow-up path, while preserving your existing booking system.</p><a class="cta" href="#demo">Explore the clickable workflow <span aria-hidden="true">→</span></a></div><div class="heroaside"><div class="muted">PROPOSED SERVICE PATHS</div><div class="num">04<span style="font-size:14px;color:#b4d4d0;font-weight:500"> / intent routes</span></div><div class="item">No heat / no cooling <b>Priority review</b></div><div class="item">Preventive maintenance <b>Scheduling</b></div><div class="item">System replacement <b>Estimate</b></div><div class="item" style="border:0">Commercial refrigeration <b>Equipment info</b></div></div></div></header>
+<main class="main"><div class="eyebrow">Interactive proof-of-concept</div><h2 id="demo">Choose a service intent</h2><p class="lead">Use the options below to see how a mobile inquiry could be classified before it enters a dispatch or customer-management workflow. This is a local simulation; nothing is submitted to 406 HVAC.</p>
+<div class="layout"><section class="panel" aria-label="Service request demo"><div class="eyebrow">STEP 1 / SELECT AN INQUIRY</div><div class="modegrid" id="options">
+<button class="option" data-kind="emergency" aria-pressed="true"><b>⚡ No heat / no cooling</b><small>Urgent equipment failure requiring priority callback or existing emergency dispatch</small></button>
+<button class="option" data-kind="maintenance" aria-pressed="false"><b>✓ Seasonal maintenance</b><small>Existing-system tune-up with service-window options</small></button>
+<button class="option" data-kind="replacement" aria-pressed="false"><b>▤ New system / replacement</b><small>Estimate request with equipment and property details</small></button>
+<button class="option" data-kind="commercial" aria-pressed="false"><b>▣ Commercial refrigeration</b><small>Location, asset type, and product-loss urgency review</small></button>
+</div><div class="status" aria-live="polite"><span id="priority" class="priority high">PRIORITY REVIEW</span><h3 id="heading" style="margin:12px 0 0">Emergency equipment issue</h3><p id="message">Classify urgency, identify service location, and route to the team's existing emergency-contact process. No automatic dispatch is activated by this demo.</p><div class="next"><button id="simulate">Simulate a new request →</button><button id="reset" class="secondary">Reset demo</button></div></div></section>
+<aside class="panel"><div class="cardtop"><div class="eyebrow">PROPOSED OPERATOR BOARD</div><div class="demo">SAMPLE DATA</div></div><p style="font-size:13px;color:#607978">An internal team view could prioritize requests by type and status.</p>
+<div id="newjob" class="queueitem" role="status"><div class="dot"></div><div><b id="queueheadline">Simulation request received</b><span id="queuetext">The matching triage lane is highlighted.</span></div></div>
+<div class="queueitem"><div class="dot"></div><div><b>Sample: Emergency heating repair</b><span>Priority review · New · Fictional example</span></div></div>
+<div class="queueitem"><div class="dot blue"></div><div><b>Sample: Commercial cooling service</b><span>Equipment details required · Fictional example</span></div></div>
+<div class="queueitem"><div class="dot green"></div><div><b>Sample: Seasonal tune-up</b><span>Scheduling queue · Fictional example</span></div></div>
+<div class="disclaimer" style="margin-top:18px"><b>Important:</b> This page is an illustrative frontend. It contains no live booking, SMS, email, payments, customer login, database, or 406 HVAC system connection.</div></aside></div>
+<div class="eyebrow">Proposed implementation architecture</div><h2>Preserve what already works. Connect the handoffs.</h2><div class="steps">
+<article class="step"><div class="number">01 / DISCOVERY</div><h3>Route by intent</h3><p>Separate emergencies, residential maintenance, replacements, and refrigeration before staff review.</p></article>
+<article class="step"><div class="number">02 / HANDOFF</div><h3>Respect existing systems</h3><p>Connect approved inquiry sources to the present booking or dispatch process only after platform access and workflow mapping.</p></article>
+<article class="step"><div class="number">03 / FOLLOW-THROUGH</div><h3>Track actual outcomes</h3><p>Label received, contacted, scheduled, completed, and closed requests; report conversions only after genuine event tracking exists.</p></article>
+</div>
+<div class="disclaimer"><b>Fast Lane Central audit boundary.</b> The public website currently presents a “Book Online” pathway and 24/7 emergency availability. This concept does not claim that booking is broken or that leads are being lost. Exact bottlenecks, APIs, conversion rates, and integration scope require a short owner-authorized review. Existing business branding is used only to demonstrate a proposed independent idea.</div>
+<div style="padding:25px 0;text-align:center"><a class="cta" style="background:#0e3d48;color:white" href="https://fastlanecentral.com">Request a 15-minute implementation review →</a><p style="color:#607978;font-size:12px">Developed by Fast Lane Central · Independent proposal · No affiliation or client endorsement</p></div>
+</main><footer>© Fast Lane Central · <a href="https://fastlanecentral.com">fastlanecentral.com</a> · Illustration only · No customer information collected</footer>
+<script>
+(()=>{'use strict';const defs={
+emergency:{badge:'PRIORITY REVIEW',heading:'Emergency equipment issue',message:"Classify urgency, identify service location, and route to the team's existing emergency-contact process. No automatic dispatch is activated by this demo.",queue:'Emergency · priority review',caption:'Flagged for immediate human triage (simulation).'},
+maintenance:{badge:'SCHEDULING QUEUE',heading:'Preventive maintenance request',message:'Gather equipment type and preferred service window, then send the inquiry to the approved scheduling system after integration.',queue:'Maintenance · scheduling',caption:'Awaiting service window (simulation).'},
+replacement:{badge:'ESTIMATE REQUEST',heading:'System upgrade or replacement',message:'Capture property type, existing equipment, and desired time frame, then prepare a structured estimate intake for staff review.',queue:'Replacement · estimate',caption:'Requires estimator follow-up (simulation).'},
+commercial:{badge:'COMMERCIAL REVIEW',heading:'Commercial refrigeration issue',message:'Identify equipment class and potential product-loss urgency, then route to the proper commercial service team after approval.',queue:'Commercial refrigeration · triage',caption:'Needs equipment and priority review (simulation).'}
+};let current='emergency';const $=id=>document.getElementById(id);
+function choose(kind){current=kind;const d=defs[kind];document.querySelectorAll('.option').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.kind===kind)));$('priority').textContent=d.badge;$('priority').className='priority'+(kind==='emergency'?' high':'');$('heading').textContent=d.heading;$('message').textContent=d.message;$('newjob').style.display='none'}
+document.querySelectorAll('.option').forEach(b=>b.addEventListener('click',()=>choose(b.dataset.kind)));
+$('simulate').addEventListener('click',()=>{const d=defs[current];$('queueheadline').textContent=d.queue;$('queuetext').textContent=d.caption;$('newjob').style.display='flex';$('newjob').scrollIntoView({behavior:'smooth',block:'nearest'})});
+$('reset').addEventListener('click',()=>choose('emergency'));choose('emergency');})();
+</script></body></html>
