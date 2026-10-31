@@ -1,1 +1,114 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,nofollow"><meta name="fastlane-preview-id" content="f710d4ad1327e55521d8"><title>Eat Greek | Unofficial Website Concept</title><style>body{margin:0;background:#101a26;color:#eaf1f8;font:16px/1.6 system-ui,Arial}main{max-width:960px;margin:auto;padding:28px 18px}section,header,footer{background:#17283a;border:1px solid #334b63;border-radius:14px;padding:22px;margin:15px 0}a,.tag{color:#a8e5d7}.notice{background:#503a23;color:#ffdfa9;padding:12px;border-radius:10px}h1{font-size:clamp(30px,6vw,54px);line-height:1.1}</style></head><body><main><div class="notice">UNOFFICIAL WEBSITE CONCEPT · Not affiliated with or operated by Eat Greek.</div><header><div class="tag">Somerville, MA · restaurant</div><h1>A clearer way to explore restaurant services.</h1><p>A mobile-first concept using public business details. It does not alter the current website, booking tools, or customer data.</p><a href="https://eatgreekboston.com/" rel="noopener noreferrer" target="_blank">Visit the current official website ↗</a></header><section><h2>Concept features</h2><ul><li>Clear service categories and next steps.</li><li>Readable mobile layout.</li><li>Directs visitors to the business's existing contact method.</li></ul></section><section><h2>Sample visitor path</h2><p>Review a service, then continue through the business's official website. This demo does not collect or transmit visitor information.</p></section><footer>Independent prototype by Fast Lane Central. Business listing details from OpenStreetMap contributors under the <a href="https://www.openstreetmap.org/copyright">ODbL</a>. No endorsement is implied.</footer></main></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<meta name="fastlane-preview-id" content="f710d4ad1327e55521d8">
+<meta name="description" content="Independent website concept for Eat Greek in Somerville, MA.">
+<title>Eat Greek · Independent Website Concept</title>
+<style>
+:root{--ink:#17231d;--muted:#626d64;--paper:#f3f2e9;--white:#fffef8;--green:#254c3a;--lime:#d6ec8b;--line:#d8ddd1;--rust:#b96343;--shadow:0 24px 70px rgba(22,42,31,.13}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.6 Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif}
+a{color:inherit}
+a:focus-visible{outline:3px solid var(--rust);outline-offset:4px}
+.wrap{width:min(1180px,calc(100% - 40px));margin:auto}
+.notice{background:var(--ink);color:#f7f4e9;text-align:center;padding:9px 16px;font-size:12px;letter-spacing:.08em;text-transform:uppercase}
+.notice strong{color:var(--lime);font-weight:700}
+nav{display:flex;align-items:center;justify-content:space-between;gap:22px;min-height:82px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none;font-weight:750;letter-spacing:-.03em}
+.brand-mark{display:grid;place-items:center;width:40px;height:40px;border-radius:50%;background:var(--green);color:var(--lime);font-family:Georgia,serif;font-size:22px}
+.brand small{display:block;color:var(--muted);font-size:11px;font-weight:550;letter-spacing:.1em;text-transform:uppercase}
+.navlinks{display:flex;align-items:center;gap:27px;font-size:13px}
+.navlinks a{text-decoration:none;color:#445148}
+.navlinks .official{padding:11px 17px;border-radius:999px;background:var(--green);color:white;font-weight:700}
+.hero{position:relative;display:grid;grid-template-columns:1.13fr .87fr;gap:36px;align-items:center;overflow:hidden;min-height:485px;padding:clamp(34px,7vw,82px);border-radius:28px;background:var(--green);color:#f7f5ec;box-shadow:var(--shadow)}
+.hero:before{content:"";position:absolute;width:440px;height:440px;right:-105px;top:-130px;border:1px solid rgba(214,236,139,.2);border-radius:50%;box-shadow:0 0 0 42px rgba(214,236,139,.035),0 0 0 86px rgba(214,236,139,.025)}
+.hero-copy,.visual{position:relative;z-index:1}
+.eyebrow{display:flex;align-items:center;gap:10px;color:var(--lime);font-size:12px;font-weight:750;letter-spacing:.14em;text-transform:uppercase}
+.eyebrow:before{content:"";width:28px;height:1px;background:var(--lime)}
+.location{margin:16px 0 12px;color:#d4ddd2;font-size:14px}
+h1,h2,h3,p{margin-top:0}
+h1{max-width:650px;margin-bottom:20px;font-family:Georgia,"Times New Roman",serif;font-size:clamp(42px,6.5vw,74px);font-weight:400;line-height:.99;letter-spacing:-.055em}
+.lede{max-width:510px;margin-bottom:28px;color:#d9e2d8;font-size:17px;line-height:1.65}
+.actions{display:flex;flex-wrap:wrap;gap:12px;align-items:center}
+.button{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:48px;padding:0 20px;border:1px solid transparent;border-radius:999px;text-decoration:none;font-weight:750;font-size:13px;transition:transform .18s ease,background .18s ease}
+.button:hover{transform:translateY(-2px)}
+.button.primary{background:var(--lime);color:var(--ink)}
+.button.secondary{border-color:rgba(255,255,255,.3);color:#fff}
+.visual{min-height:330px;display:flex;align-items:center;justify-content:center}
+.orbit{position:absolute;width:300px;height:300px;border:1px solid rgba(214,236,139,.32);border-radius:50%}
+.orbit:before,.orbit:after{content:"";position:absolute;border:1px solid rgba(214,236,139,.2);border-radius:50%;inset:24px}
+.orbit:after{inset:52px}
+.feature-card{position:relative;width:min(100%,340px);padding:26px;border:1px solid rgba(255,255,255,.24);border-radius:20px;background:rgba(13,34,24,.72);backdrop-filter:blur(8px);box-shadow:0 24px 55px rgba(0,0,0,.22)}
+.feature-top{display:flex;align-items:center;justify-content:space-between;margin-bottom:25px;color:#c7d5c8;font-size:11px;letter-spacing:.12em;text-transform:uppercase}
+.live-dot{display:inline-block;width:8px;height:8px;margin-right:7px;border-radius:50%;background:var(--lime)}
+.route{display:flex;align-items:center;gap:13px;padding:14px 0;border-top:1px solid rgba(255,255,255,.15)}
+.route-index{display:grid;place-items:center;flex:0 0 34px;height:34px;border-radius:50%;background:rgba(214,236,139,.12);color:var(--lime);font:15px Georgia,serif}
+.route b{display:block;color:white;font-size:14px}
+.route small{display:block;color:#becabe;font-size:12px}
+.micro-note{margin:22px 0 0;color:#c7d1c6;font-size:11px}
+.intro{display:grid;grid-template-columns:.8fr 1.2fr;gap:40px;align-items:end;padding:clamp(65px,9vw,110px) 0 32px}
+.section-label{margin-bottom:13px;color:var(--rust);font-size:11px;font-weight:800;letter-spacing:.15em;text-transform:uppercase}
+h2{margin-bottom:0;font-family:Georgia,"Times New Roman",serif;font-size:clamp(34px,4.6vw,54px);font-weight:400;line-height:1.05;letter-spacing:-.045em}
+.intro p{max-width:590px;margin:0;color:var(--muted);font-size:17px}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:15px;padding-bottom:85px}
+.card{min-height:225px;padding:25px;border:1px solid var(--line);border-radius:18px;background:var(--white)}
+.number{display:inline-grid;place-items:center;width:36px;height:36px;margin-bottom:32px;border-radius:50%;background:#e8eddc;color:var(--green);font:15px Georgia,serif}
+.card h3{margin-bottom:9px;font-family:Georgia,serif;font-size:22px;font-weight:400;letter-spacing:-.02em}
+.card p{margin:0;color:var(--muted);font-size:14px}
+.path{display:grid;grid-template-columns:1fr auto;gap:28px;align-items:center;margin-bottom:72px;padding:clamp(28px,5vw,52px);border-radius:22px;background:#e6e8dc}
+.path-copy{max-width:650px}
+.path h2{margin-bottom:14px;font-size:clamp(30px,4vw,43px)}
+.path p{margin-bottom:0;color:var(--muted)}
+.path .button{background:var(--green);color:white}
+.disclaimer{display:flex;justify-content:space-between;gap:20px;padding:21px 0 32px;border-top:1px solid var(--line);color:var(--muted);font-size:12px}
+.disclaimer a{color:var(--green);font-weight:700}
+@media(max-width:800px){.hero{grid-template-columns:1fr;gap:20px;padding:42px 30px}.visual{min-height:275px}.orbit{width:260px;height:260px}.intro{grid-template-columns:1fr;gap:18px}.cards{grid-template-columns:1fr 1fr}.path{grid-template-columns:1fr}.navlinks{gap:14px}}
+@media(max-width:560px){.wrap{width:min(100% - 28px,1180px)}nav{min-height:69px}.navlinks a:not(.official){display:none}.navlinks .official{padding:10px 13px;font-size:11px}.hero{min-height:auto;padding:34px 22px;border-radius:20px}h1{font-size:45px}.lede{font-size:15px}.visual{min-height:245px}.feature-card{padding:20px}.intro{padding-top:62px}.cards{grid-template-columns:1fr;padding-bottom:55px}.card{min-height:190px}.number{margin-bottom:20px}.path{margin-bottom:48px;padding:27px 22px}.disclaimer{display:block}.disclaimer span{display:block;margin-top:8px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.button{transition:none}}
+</style>
+</head>
+<body>
+<div class="notice"><strong>UNOFFICIAL WEBSITE CONCEPT</strong> · Independent design proposal, not the official website of Eat Greek</div>
+<div class="wrap">
+<nav aria-label="Main navigation">
+<a class="brand" href="#top"><span class="brand-mark" aria-hidden="true">E</span><span>Eat Greek<small>Somerville, MA</small></span></a>
+<div class="navlinks"><a href="#experience">The concept</a><a href="#next-step">Next step</a><a class="official" href="https://eatgreekboston.com/" target="_blank" rel="noopener noreferrer">Official website ↗</a></div>
+</nav>
+<main id="top">
+<section class="hero" aria-labelledby="hero-title">
+<div class="hero-copy">
+<div class="eyebrow">FOOD &amp; HOSPITALITY</div>
+<p class="location">Somerville, MA <span aria-hidden="true">·</span> Restaurant</p>
+<h1 id="hero-title">A more inviting first look at your place.</h1>
+<p class="lede">A clear, polished concept that helps local guests picture the visit and find the next step.</p>
+<div class="actions"><a class="button primary" href="https://eatgreekboston.com/" target="_blank" rel="noopener noreferrer">Explore the official site <span aria-hidden="true">↗</span></a><a class="button secondary" href="#experience">See the concept</a></div>
+</div>
+<div class="visual" aria-label="Sample visitor journey">
+<div class="orbit" aria-hidden="true"></div>
+<div class="feature-card">
+<div class="feature-top"><span><i class="live-dot"></i>Concept journey</span><span>01—03</span></div>
+<div class="route"><span class="route-index">01</span><span><b>Discover</b><small>A clear, welcoming first impression</small></span></div>
+<div class="route"><span class="route-index">02</span><span><b>Explore</b><small>Information arranged for easy scanning</small></span></div>
+<div class="route"><span class="route-index">03</span><span><b>Continue</b><small>Next steps on the official website</small></span></div>
+<p class="micro-note">A visual direction only · no forms or visitor tracking</p>
+</div>
+</div>
+</section>
+<section id="experience" class="intro">
+<div><p class="section-label">A thoughtful visitor path</p><h2>Simple to explore.<br>Easy to act on.</h2></div>
+<p>This is a visual proposal for how Eat Greek could introduce itself online. It uses the public business listing for context and keeps current, operational information on the official website.</p>
+</section>
+<section class="cards" aria-label="Concept details"><article class="card"><span class="number">01</span><h3>Discover the experience</h3><p>Set the scene and introduce what guests can expect.</p></article><article class="card"><span class="number">02</span><h3>Explore the offerings</h3><p>Give your menu or services room to breathe, without crowding the page.</p></article><article class="card"><span class="number">03</span><h3>Plan a visit</h3><p>Make the official website easy to reach when guests are ready.</p></article></section>
+<section id="next-step" class="path">
+<div class="path-copy"><p class="section-label">Keep the real details with the business</p><h2>Ready to explore what is current?</h2><p>Use the business's official website for accurate offerings, hours, appointments, reservations, and contact details. This concept does not collect information or replace the existing site.</p></div>
+<a class="button" href="https://eatgreekboston.com/" target="_blank" rel="noopener noreferrer">Visit Eat Greek ↗</a>
+</section>
+</main>
+<footer class="disclaimer"><div><strong>UNOFFICIAL CONCEPT</strong> · Independent prototype by Fast Lane Central. Not affiliated with or operated by Eat Greek.</div><span>Map/listing context © OpenStreetMap contributors · <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener noreferrer">ODbL attribution</a></span></footer>
+</div>
+</body>
+</html>
