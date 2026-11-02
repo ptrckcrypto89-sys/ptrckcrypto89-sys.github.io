@@ -1,5 +1,5 @@
 {
-  "last_compiled": "2026-10-25",
+  "last_compiled": "2026-11-02",
   "website_model": "paid_only_no_public_guides",
   "states": [
     {
@@ -48,6 +48,8 @@
       "name": "Arizona",
       "code": "AZ",
       "slug": "arizona",
+      "research_reviewed": "2026-11-02",
+      "official_source_count": 10,
       "status": "guide_researched_private_access_pending",
       "paid_available": false,
       "state_kit_url": null,
